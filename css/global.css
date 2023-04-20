@@ -14,4 +14,31 @@
 
 body {
   font-family: "Nunito", sans-serif;
+  background-color: var(--color-fondo);
+}
+
+.header {
+  background-color: var(--color-secundario);
+}
+
+.header-contenido {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 80px;
+}
+
+main {
+  color: var(--celeste);
+}
+
+.footer {
+  background-color: var(--beige);
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
