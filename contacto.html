@@ -1,25 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="es">
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/contacto.css">
     <title>Contacto</title>
-  </head>
-  <body>
+</head>
+
+<body>
     <header class="header">
-      <div class="header-contenido">
-        <img class="logo" alt="logo" src="img/logo.png" />
-        <input type="text" />
-        <p>carrito logo</p>
-      </div>
+        <div class="header-contenido">
+            <img class="logo" alt="logo" src="img/logo.png" />
+            <input type="text" />
+            <p>tarjetas logo</p>
+        </div>
     </header>
+    <main class="contenedor">
+        <div class="datos">
+            <article class="contacto">
+                <h2>Contacto</h2>
+                <form action="mailto: villalba.jorge.3m@gmail.com" method="post"
+                    enctype="application/x-www-form-urlencoded">
+                    <!--<div class="nat"> -->
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" name="nombre" placeholder="ingrese su nombre"
+                            required="Obligatorio">
+                        <label for="apellido">Apellido</label>
+                        <input id="apellido" type="text" name="apellido" placeholder="ingrese su apellido"
+                            required="Obligatorio">
+                        <label for="telefono">Telefono (opcional)</label>
+                        <input id="telefono" type="tel" name="telefono" placeholder="ingrese su telefono">
+                    <!--</div>-->
+                    
+                    <label for="consulta">Consulta</label>
+                    <textarea id="consulta" name="consulta" cols="40" rows="10" placeholder="Ingrese una consulta..."
+                        required="Obligatorio"></textarea>
+                    <input id="Enviar" type="submit" value="Enviar">
+                </form>
+            </article>
+            <article class="empresa">
+                <h2>Datos de Contacto</h2>
+                <p>Nombre de la empresa</p>
+                <p>Numero de telefono: XXXXXXXXXX</p>
+                <p>Direccion: Av. Quiero Aprobar la Materia al 100, entre Gotham City y Pandas Bebe</p>
+                <p>Correo Electronico: XXXXXXX@gmail.com</p>
+                <p>Imagen Logo</p>
+            </article>
+        </div>
+        <aside>
+            <h3>Como Llegar</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13125.982978641126!2d-58.56985519235841!3d-34.667435644108046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1682107807104!5m2!1ses-419!2sar"
+                width="500" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </aside>
+    </main>
     <footer class="footer">
-      <p>Santiago Piedrafita</p>
-      <p>Jorge Villalba</p>
-      <p>Agustin Pucci</p>
-      <p>Copyright 2023</p>
+        <p>Santiago Piedrafita</p>
+        <p>Jorge Villalba</p>
+        <p>Agustin Pucci</p>
+        <p>Copyright 2023</p>
     </footer>
-  </body>
+</body>
+
 </html>
