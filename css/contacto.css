@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+}
+.contenedor{
+    margin: 0px 6%;
+}
+.datos {
+    display: flex;
+    justify-content: space-around;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 2px;
+}
+/*Pendiente de ver*/
+#Enviar{
+    margin: 2px;
+    width: auto;
+    border-radius:10%;
+}
+.empresa{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: solid; 
+}
+.empresa p{
+    margin: 2px;
+}
+aside{
+    text-align: center;
+}
+h3{
+    background-color: rgb(78, 156, 0);
+}
+iframe{
+    width: 100%;
+}
