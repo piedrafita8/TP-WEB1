@@ -38,7 +38,37 @@ main {
 
 .footer {
   background-color: var(--beige);
+  padding: 15px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  align-items: center;
   gap: 30px;
+}
+
+.menu-inferior a {
+  display: block;
+  text-decoration: none;
+  color: black;
+}
+
+.redes-sociales a {
+  text-decoration: none;
+}
+
+.menu-inferior a:hover {
+  display: block;
+  font-size: 16.5px;
+  color: var(--color-secundario);
+  transition: all ease 0.2s;
+}
+
+.menu-inferior,
+.datos-personales {
+  text-align: center;
+  width: 175px;
+}
+
+.icon {
+  width: 30px;
+  margin-right: 5px;
 }
