@@ -19,37 +19,46 @@
     <main>
       <section class="giftCardSection">
         <article class="giftcardPreview">
-          <div class="giftcardDemo"></div>
+          <div id="divPreview" class="giftcardDemo giftcardFondo1">
+            <p id="previewText" class="giftcardDemoText giftcardColorText1">Gift-Card para:</p>
+            <p id="previewDest" class="giftcardDemoText giftcardColorText1 giftcardText1">[Inserte Destinatario]</p>
+            <p id="previewMont" class="giftcardDemoMonto giftcardPos1">$0000</p>
+          </div>
           <h3>Vista previa de resultado de Personalizacion.</h3>
         </article>
         <article class="giftcardForm">
           <h2>Personalizacion de Gift-Card</h2>
           <br />
           <form action="#" method="get">
-            <input
+            <h4>
+              <input
               type="text"
               name="nameDestinatario"
               id="nameDestinatario"
               placeholder="Nombre de Destinatario"
               required
             />
+            </h4>
+
+            <br>
 
             <h4>Color</h4>
             <div class="giftcardFormSelect">
               <label for="selectColor1"
-                ><div class="giftcardColor"></div
+                ><div class="giftcardColor giftcardColorSelect1"></div
               ></label>
               <input
                 type="radio"
                 name="selectColor"
                 id="selectColor1"
                 value="1"
+                checked="checked"
               />
             </div>
 
             <div class="giftcardFormSelect">
               <label for="selectColor2"
-                ><div class="giftcardColor"></div
+                ><div class="giftcardColor giftcardColorSelect2"></div
               ></label>
               <input
                 type="radio"
@@ -61,7 +70,7 @@
 
             <div class="giftcardFormSelect">
               <label for="selectColor3"
-                ><div class="giftcardColor"></div
+                ><div class="giftcardColor giftcardColorSelect3"></div
               ></label>
               <input
                 type="radio"
@@ -73,7 +82,7 @@
 
             <div class="giftcardFormSelect">
               <label for="selectColor4"
-                ><div class="giftcardColor"></div
+                ><div class="giftcardColor giftcardColorSelect4"></div
               ></label>
               <input
                 type="radio"
@@ -85,7 +94,7 @@
 
             <div class="giftcardFormSelect">
               <label for="selectColor5"
-                ><div class="giftcardColor"></div
+                ><div class="giftcardColor giftcardColorSelect5"></div
               ></label>
               <input
                 type="radio"
@@ -97,17 +106,18 @@
 
             <h4>Tamaño de fuente</h4>
             <div class="giftcardFormSelect">
-              <label for="selectFuente1" style="font-size: 20px">20px</label>
+              <label for="selectFuente1" class="giftcardText1">20px</label>
               <input
                 type="radio"
                 name="selectFuente"
                 id="selectFuente1"
                 value="20px"
+                checked="checked"
               />
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectFuente2" style="font-size: 28px">28px</label>
+              <label for="selectFuente2" class="giftcardText2">28px</label>
               <input
                 type="radio"
                 name="selectFuente"
@@ -117,7 +127,7 @@
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectFuente3" style="font-size: 32px">32px</label>
+              <label for="selectFuente3" class="giftcardText3">32px</label>
               <input
                 type="radio"
                 name="selectFuente"
@@ -127,7 +137,7 @@
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectFuente4" style="font-size: 48px">48px</label>
+              <label for="selectFuente4" class="giftcardText4">48px</label>
               <input
                 type="radio"
                 name="selectFuente"
@@ -137,7 +147,7 @@
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectFuente5" style="font-size: 60px">60px</label>
+              <label for="selectFuente5" class="giftcardText5">60px</label>
               <input
                 type="radio"
                 name="selectFuente"
@@ -146,22 +156,32 @@
               />
             </div>
 
-            <h4>Monto</h4>
-            <input type="text" name="monto" id="monto" required />
+            <h4>
+              <input 
+              type="text" 
+              name="monto" 
+              id="monto" 
+              placeholder="Monto $..." 
+              required />
+              
+            </h4>
+            
+            <br>
 
             <h4>Ubicacion</h4>
             <div class="giftcardFormSelect">
-              <label for="selectUbicacion1">1</label>
+              <label for="selectUbicacion1"><img class="imagePosicion" alt="posicion1" src="img\giftcard\gcposicion1.png" /></label>
               <input
                 type="radio"
                 name="selectUbicacion"
                 id="selectUbicacion1"
                 value="1"
+                checked="checked"
               />
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectUbicacion2">2</label>
+              <label for="selectUbicacion2"><img class="imagePosicion" alt="posicion2" src="img\giftcard\gcposicion2.png" /></label>
               <input
                 type="radio"
                 name="selectUbicacion"
@@ -171,7 +191,7 @@
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectUbicacion3">3</label>
+              <label for="selectUbicacion3"><img class="imagePosicion" alt="posicion3" src="img\giftcard\gcposicion3.png" /></label>
               <input
                 type="radio"
                 name="selectUbicacion"
@@ -183,19 +203,20 @@
             <h4>Fondo</h4>
             <div class="giftcardFormSelect">
               <label for="selectFondo1"
-                ><div class="giftcardFondo"></div
+                ><div class="giftcardFondo giftcardFondo1"></div
               ></label>
               <input
                 type="radio"
                 name="selectFondo"
                 id="selectFondo1"
                 value="1"
+                checked="checked"
               />
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectFondo1"
-                ><div class="giftcardFondo"></div
+              <label for="selectFondo2"
+                ><div class="giftcardFondo giftcardFondo2"></div
               ></label>
               <input
                 type="radio"
@@ -207,7 +228,7 @@
 
             <div class="giftcardFormSelect">
               <label for="selectFondo3"
-                ><div class="giftcardFondo"></div
+                ><div class="giftcardFondo giftcardFondo3"></div
               ></label>
               <input
                 type="radio"
@@ -219,7 +240,7 @@
 
             <div class="giftcardFormSelect">
               <label for="selectFondo4"
-                ><div class="giftcardFondo"></div
+                ><div class="giftcardFondo giftcardFondo4"></div
               ></label>
               <input
                 type="radio"
@@ -231,7 +252,7 @@
 
             <div class="giftcardFormSelect">
               <label for="selectFondo5"
-                ><div class="giftcardFondo"></div
+                ><div class="giftcardFondo giftcardFondo5"></div
               ></label>
               <input
                 type="radio"

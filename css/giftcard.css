@@ -52,3 +52,131 @@
     width: 125px;
     background-color: #555;
   }
+
+  .imagePosicion{
+    width: 125px;
+    height: 125px;
+    display:block;
+  }
+
+  .giftcardColorSelect1{
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  .giftcardColorSelect2{
+    background-color: rgba(255, 0, 0, 0.8);
+  }
+
+  .giftcardColorSelect3{
+    background-color: rgba(0, 128, 0, 0.8);
+  }
+
+  .giftcardColorSelect4{
+    background-color: rgba(0, 0, 255, 0.8);
+  }
+
+  .giftcardColorSelect5{
+    background-color: rgba(255, 255, 0, 0.8);
+  }
+
+  .giftcardColorText1{
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .giftcardColorText2{
+    color: rgba(255, 0, 0, 0.8);
+  }
+
+  .giftcardColorText3{
+    color: rgba(0, 128, 0, 0.8);
+  }
+
+  .giftcardColorText4{
+    color: rgba(0, 0, 255, 0.8);
+  }
+
+  .giftcardColorText5{
+    color: rgba(255, 255, 0, 0.8);
+  }
+
+  .giftcardText1{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .giftcardText2{
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .giftcardText3{
+    font-size: 32px;
+    font-weight: bold;
+  }
+
+  .giftcardText4{
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .giftcardText5{
+    font-size: 60px;
+    font-weight: bold;
+  }
+
+  .giftcardPos1{
+    top: 211px;
+    left: 175px;
+  }
+
+  .giftcardPos2{
+    top: -50px;
+    left: 175px;
+  }
+
+  .giftcardPos3{
+    top: -50px;
+    left: 0px;
+  }
+
+  .giftcardFondo1{
+    background: rgb(0,10,80);
+    background: linear-gradient(45deg, rgba(0,10,80,1) 0%, rgba(0,100,255,1) 50%, rgba(0,10,80,1) 100%);
+  }
+
+  .giftcardFondo2{
+    background: rgb(80,0,10);
+    background: linear-gradient(45deg, rgba(80,0,10,1) 0%, rgba(255,0,80,1) 50%, rgba(80,0,10,1) 100%);
+  }
+
+  .giftcardFondo3{
+    background: rgb(10,80,0);
+    background: linear-gradient(45deg, rgba(10,80,0,1) 0%, rgba(80,255,0,1) 50%, rgba(10,80,0,1) 100%);
+  }
+
+  .giftcardFondo4{
+    background: rgb(80,80,10);
+    background: linear-gradient(45deg, rgba(80,80,10,1) 0%, rgba(255,255,80,1) 50%, rgba(80,80,10,1) 100%);
+  }
+
+  .giftcardFondo5{
+    background: rgb(80,10,80);
+    background: linear-gradient(45deg, rgba(80,10,80,1) 0%, rgba(255,80,255,1) 50%, rgba(80,10,80,1) 100%);
+  }
+
+  .giftcardDemoText{
+    position:relative;
+    top: 40%;
+    text-align: center;
+  }
+
+  .giftcardDemoMonto{
+    position: relative;
+    background-color:black;
+    color:white;
+    font-size: 30px;
+    width: 125px;
+    height: 40px;
+    
+  }
+
