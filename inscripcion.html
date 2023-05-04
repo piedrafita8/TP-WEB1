@@ -10,9 +10,50 @@
   <body>
     <header class="header">
       <div class="header-contenido">
-        <img class="logo" alt="logo" src="img/logo.png" />
-        <input type="text" />
-        <p>carrito logo</p>
+        <a href="index.html">
+          <img class="logo" alt="logo" src="img/logo.png" />
+        </a>
+        <form action="#" method="post" class="formulario">
+          <datalist id="opciones">
+            <option value="Inicio"></option>
+            <option value="Detalle de curso"></option>
+            <option value="Inscripcion"></option>
+            <option value="Giftcard"></option>
+            <option value="Contacto"></option>
+          </datalist>
+
+          <input type="text" name="search" list="opciones" class="input" />
+
+          <button type="submit" class="btn-search">
+            <img class="img-search" alt="search" src="img/icons/search.png" />
+          </button>
+        </form>
+
+        <div class="carrito">
+          <img class="icon" src="img/icons/cart.png" />
+          <p class="cantidad">1</p>
+        </div>
+      </div>
+      <div>
+        <nav class="navbar">
+          <ul>
+            <li class="item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="item">
+              <a href="curso.html">Curso</a>
+            </li>
+            <li class="item">
+              <a href="inscripcion.html">Inscripcion</a>
+            </li>
+            <li class="item">
+              <a href="giftcard.html">Giftcard</a>
+            </li>
+            <li class="item">
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <footer class="footer">

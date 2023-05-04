@@ -11,17 +11,65 @@
   <body>
     <header class="header">
       <div class="header-contenido">
-        <img class="logo" alt="logo" src="img/logo.png" />
-        <input type="text" />
-        <p>carrito logo</p>
+        <a href="index.html">
+          <img class="logo" alt="logo" src="img/logo.png" />
+        </a>
+        <form action="#" method="post" class="formulario">
+          <datalist id="opciones">
+            <option value="Inicio"></option>
+            <option value="Detalle de curso"></option>
+            <option value="Inscripcion"></option>
+            <option value="Giftcard"></option>
+            <option value="Contacto"></option>
+          </datalist>
+
+          <input type="text" name="search" list="opciones" class="input" />
+
+          <button type="submit" class="btn-search">
+            <img class="img-search" alt="search" src="img/icons/search.png" />
+          </button>
+        </form>
+
+        <div class="carrito">
+          <img class="icon" src="img/icons/cart.png" />
+          <p class="cantidad">1</p>
+        </div>
+      </div>
+      <div>
+        <nav class="navbar">
+          <ul>
+            <li class="item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="item">
+              <a href="curso.html">Curso</a>
+            </li>
+            <li class="item">
+              <a href="inscripcion.html">Inscripcion</a>
+            </li>
+            <li class="item">
+              <a href="giftcard.html">Giftcard</a>
+            </li>
+            <li class="item">
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main>
       <section class="giftCardSection">
         <article class="giftcardPreview">
           <div id="divPreview" class="giftcardDemo giftcardFondo1">
-            <p id="previewText" class="giftcardDemoText giftcardColorText1">Gift-Card para:</p>
-            <p id="previewDest" class="giftcardDemoText giftcardColorText1 giftcardText1">[Inserte Destinatario]</p>
+            <p id="previewText" class="giftcardDemoText giftcardColorText1">
+              Gift-Card para:
+            </p>
+            <p
+              id="previewDest"
+              class="giftcardDemoText giftcardColorText1 giftcardText1"
+            >
+              [Inserte Destinatario]
+            </p>
             <p id="previewMont" class="giftcardDemoMonto giftcardPos1">$0000</p>
           </div>
           <h3>Vista previa de resultado de Personalizacion.</h3>
@@ -32,15 +80,15 @@
           <form action="#" method="get">
             <h4>
               <input
-              type="text"
-              name="nameDestinatario"
-              id="nameDestinatario"
-              placeholder="Nombre de Destinatario"
-              required
-            />
+                type="text"
+                name="nameDestinatario"
+                id="nameDestinatario"
+                placeholder="Nombre de Destinatario"
+                required
+              />
             </h4>
 
-            <br>
+            <br />
 
             <h4>Color</h4>
             <div class="giftcardFormSelect">
@@ -157,20 +205,25 @@
             </div>
 
             <h4>
-              <input 
-              type="text" 
-              name="monto" 
-              id="monto" 
-              placeholder="Monto $..." 
-              required />
-              
+              <input
+                type="text"
+                name="monto"
+                id="monto"
+                placeholder="Monto $..."
+                required
+              />
             </h4>
-            
-            <br>
+
+            <br />
 
             <h4>Ubicacion</h4>
             <div class="giftcardFormSelect">
-              <label for="selectUbicacion1"><img class="imagePosicion" alt="posicion1" src="img\giftcard\gcposicion1.png" /></label>
+              <label for="selectUbicacion1"
+                ><img
+                  class="imagePosicion"
+                  alt="posicion1"
+                  src="img\giftcard\gcposicion1.png"
+              /></label>
               <input
                 type="radio"
                 name="selectUbicacion"
@@ -181,7 +234,12 @@
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectUbicacion2"><img class="imagePosicion" alt="posicion2" src="img\giftcard\gcposicion2.png" /></label>
+              <label for="selectUbicacion2"
+                ><img
+                  class="imagePosicion"
+                  alt="posicion2"
+                  src="img\giftcard\gcposicion2.png"
+              /></label>
               <input
                 type="radio"
                 name="selectUbicacion"
@@ -191,7 +249,12 @@
             </div>
 
             <div class="giftcardFormSelect">
-              <label for="selectUbicacion3"><img class="imagePosicion" alt="posicion3" src="img\giftcard\gcposicion3.png" /></label>
+              <label for="selectUbicacion3"
+                ><img
+                  class="imagePosicion"
+                  alt="posicion3"
+                  src="img\giftcard\gcposicion3.png"
+              /></label>
               <input
                 type="radio"
                 name="selectUbicacion"
