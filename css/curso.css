@@ -1,65 +1,65 @@
-.contenedor{
-    margin: 5px 6%;
+.contenedor {
+  margin: 5px 6%;
 }
 /*Primera seccion*/
 
 /*Primer Article*/
-.jpgdesc{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.jpgdesc {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.cursojpg{
-    display: flex;
-    width: 60%;
-    height: 60%;
-    justify-content: center;
+.cursojpg {
+  display: flex;
+  width: 60%;
+  height: 60%;
+  justify-content: center;
 }
-.cursojpg img{
-    width: 90%;
-    height: 90%;
+.cursojpg img {
+  width: 90%;
+  height: 90%;
 }
-.cursodesc{
-    margin: 3%;
-    width: 100%;
+.cursodesc {
+  margin: 3%;
+  width: 100%;
 }
-.cursodesc h2{
-    text-align: center;
-    margin-bottom: 3%;
+.cursodesc h2 {
+  text-align: center;
+  margin-bottom: 3%;
 }
-.cursodesc p{
-    margin-bottom: 1%;
+.cursodesc p {
+  margin-bottom: 1%;
 }
-li{
-    list-style:square;
-    margin: 2px;
+.lista li,
+.unidades li {
+  list-style: square;
+  margin: 2px;
 }
 /*Segundo Article*/
-.centrado{
-    text-align: center;
-
+.centrado {
+  text-align: center;
 }
-.contenido{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 /*Segunda seccion*/
-.doc h2{
-    margin-left: 4%;
+.doc h2 {
+  margin-left: 4%;
 }
-.docente{
-    display: flex;
-    justify-content: space-around;
+.docente {
+  display: flex;
+  justify-content: space-around;
 }
-.profejpg{
-    display: flex;
-   width: 25%;
-   height: 25%;
+.profejpg {
+  display: flex;
+  width: 25%;
+  height: 25%;
 }
-.profejpg img{
-    width: 90%;
-    height: 90%;
-    border-radius: 50%;
+.profejpg img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
 }
