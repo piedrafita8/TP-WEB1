@@ -86,12 +86,6 @@ h3{
 .unidades li {
     list-style: none;
 }
-.unidades i{
-    padding: 1px;
-    max-width: 10%;
-    min-width: 9%;
-    margin-right: 0.5em;
-}
 
 /* ----------Segundo Article -------------*/
 .centrado {
