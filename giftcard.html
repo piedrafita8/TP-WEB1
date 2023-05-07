@@ -83,15 +83,25 @@
                 type="text"
                 name="nameDestinatario"
                 id="nameDestinatario"
-                placeholder="Nombre de Destinatario"
+                class="giftcardFormInput giftcardFormInputDestinatario"
+                placeholder="Destinatario"
                 required
               />
             </h4>
 
-            <br />
+            <h4>
+              <input
+                type="text"
+                name="monto"
+                id="monto"
+                class="giftcardFormInput giftcardFormInputMonto"
+                placeholder="Monto"
+                required
+              />
+            </h4>
 
             <h4>Color</h4>
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectColor">
               <label for="selectColor1"
                 ><div class="giftcardColor giftcardColorSelect1"></div
               ></label>
@@ -104,7 +114,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectColor">
               <label for="selectColor2"
                 ><div class="giftcardColor giftcardColorSelect2"></div
               ></label>
@@ -116,7 +126,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectColor">
               <label for="selectColor3"
                 ><div class="giftcardColor giftcardColorSelect3"></div
               ></label>
@@ -128,7 +138,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectColor">
               <label for="selectColor4"
                 ><div class="giftcardColor giftcardColorSelect4"></div
               ></label>
@@ -140,7 +150,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectColor">
               <label for="selectColor5"
                 ><div class="giftcardColor giftcardColorSelect5"></div
               ></label>
@@ -153,7 +163,7 @@
             </div>
 
             <h4>Tamaño de fuente</h4>
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFuente">
               <label for="selectFuente1" class="giftcardText1">20px</label>
               <input
                 type="radio"
@@ -164,7 +174,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFuente">
               <label for="selectFuente2" class="giftcardText2">28px</label>
               <input
                 type="radio"
@@ -174,7 +184,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFuente">
               <label for="selectFuente3" class="giftcardText3">32px</label>
               <input
                 type="radio"
@@ -184,7 +194,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFuente">
               <label for="selectFuente4" class="giftcardText4">48px</label>
               <input
                 type="radio"
@@ -194,7 +204,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFuente">
               <label for="selectFuente5" class="giftcardText5">60px</label>
               <input
                 type="radio"
@@ -204,20 +214,8 @@
               />
             </div>
 
-            <h4>
-              <input
-                type="text"
-                name="monto"
-                id="monto"
-                placeholder="Monto $..."
-                required
-              />
-            </h4>
-
-            <br />
-
             <h4>Ubicacion</h4>
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectUbicacion">
               <label for="selectUbicacion1"
                 ><img
                   class="imagePosicion"
@@ -233,7 +231,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectUbicacion">
               <label for="selectUbicacion2"
                 ><img
                   class="imagePosicion"
@@ -248,7 +246,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectUbicacion">
               <label for="selectUbicacion3"
                 ><img
                   class="imagePosicion"
@@ -264,7 +262,7 @@
             </div>
 
             <h4>Fondo</h4>
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFondo">
               <label for="selectFondo1"
                 ><div class="giftcardFondo giftcardFondo1"></div
               ></label>
@@ -277,7 +275,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFondo">
               <label for="selectFondo2"
                 ><div class="giftcardFondo giftcardFondo2"></div
               ></label>
@@ -289,7 +287,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFondo">
               <label for="selectFondo3"
                 ><div class="giftcardFondo giftcardFondo3"></div
               ></label>
@@ -301,7 +299,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFondo">
               <label for="selectFondo4"
                 ><div class="giftcardFondo giftcardFondo4"></div
               ></label>
@@ -313,7 +311,7 @@
               />
             </div>
 
-            <div class="giftcardFormSelect">
+            <div class="giftcardFormSelectFondo">
               <label for="selectFondo5"
                 ><div class="giftcardFondo giftcardFondo5"></div
               ></label>
@@ -326,7 +324,7 @@
             </div>
 
             <br />
-            <input type="submit" value="Confirmar" />
+            <input type="submit" value="Confirmar" class="giftcardButton" />
           </form>
         </article>
       </section>
