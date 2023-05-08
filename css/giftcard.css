@@ -4,7 +4,7 @@
   }
 
   .giftcardPreview{
-    margin: 5px 25px;
+    margin: 30px;
   }
 
   .giftcardPreview h3{
@@ -17,32 +17,113 @@
     background-color: #555;
   }
 
+  .giftcardDemoText{
+    position:relative;
+    top: 40%;
+    text-align: center;
+    text-shadow: -0.5px -0.5px #000, 0.5px 0.5px #000, -0.5px 0.5px #000, 0.5px -0.5px #000
+  }
+
+  .giftcardDemoMonto{
+    position: relative;
+    background-color:black;
+    color:white;
+    font-size: 30px;
+    width: 125px;
+    height: 40px;
+  }
+
+
   .giftcardForm{
     margin: 30px;
     width: 100%;
   }
 
-  .giftcardFormSelect{
-    width: 125px;
+  .giftcardFormInput{
+    width: 12%;
+    height: 32px;
+    margin: 8px 0px;
+    font-size: 20px;
+    padding-left: 25px;
+    transition: width 0.4s ease-in-out;
+  }
+
+  .giftcardFormInput:focus{
+    width: 35%;
+    outline: none;
+  }
+
+  .giftcardFormInputDestinatario{
+    background-image: url('../img/icons/user.svg');
+    background-position: 5px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+  }
+
+  .giftcardFormInputMonto{
+    background-image: url('../img/icons/money.svg');
+    background-position: 5px;
+    background-size: 15px;
+    background-repeat: no-repeat;
+  }
+
+  .giftcardFormSelectColor{
+    width: 50px;
     display: inline-block;
     margin: 10px;
   }
 
-  .giftcardFormSelect label{
-    display:block;
-    width: 125px;
-    text-align: center;
+  .giftcardFormSelectColor input{
+    width: 20px;
+    display: block;
+    margin: 8px auto;
+  }
+  
+  .giftcardFormSelectFuente{
+    width: auto;
+    display: inline-block;
+    margin: 10px;
   }
 
-  .giftcardFormSelect input{
+  .giftcardFormSelectFuente input{
     width: 20px;
     display: block;
     margin: 0px auto;
   }
 
-  .giftcardColor{
-    height: 125px;
+  .giftcardFormSelectFuente label{
+    display:block;
+    width: fit-content;
+    text-align: center;
+  }
+
+  .giftcardFormSelectUbicacion{
+    width: 85px;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .giftcardFormSelectUbicacion input{
+    width: 20px;
+    display: block;
+    margin: 6px auto;
+  }
+
+  .giftcardFormSelectFondo{
     width: 125px;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  .giftcardFormSelectFondo input{
+    width: 20px;
+    display: block;
+    margin: 6px auto;
+  }
+
+  .giftcardColor{
+    height: 50px;
+    width: 50px;
     border-radius: 50%;
     background-color: #555;
   }
@@ -54,8 +135,8 @@
   }
 
   .imagePosicion{
-    width: 125px;
-    height: 125px;
+    width: 85px;
+    height: 85px;
     display:block;
   }
 
@@ -164,19 +245,20 @@
     background: linear-gradient(45deg, rgba(80,10,80,1) 0%, rgba(255,80,255,1) 50%, rgba(80,10,80,1) 100%);
   }
 
-  .giftcardDemoText{
-    position:relative;
-    top: 40%;
+  .giftcardButton{
+    background-color: var(--celeste);
+    border: none;
+    color: var(--color-fondo);
+    padding: 10px 50px;
+    margin: 8px;
     text-align: center;
+    font-size: 16px;
+    border-radius: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
   }
 
-  .giftcardDemoMonto{
-    position: relative;
-    background-color:black;
-    color:white;
-    font-size: 30px;
-    width: 125px;
-    height: 40px;
-    
+  .giftcardButton:hover{
+    background-color: var(--color-secundario);
+    color: var(--celeste);
   }
-
