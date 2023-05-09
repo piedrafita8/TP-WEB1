@@ -124,6 +124,11 @@
   text-decoration: underline;
 }
 
+.curso-btn a {
+  text-decoration: none;
+  color: var(--celeste);
+}
+
 .cursos-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
