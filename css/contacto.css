@@ -1,110 +1,110 @@
 h2 {
-    text-align: center;
-    width: 100%;
-    border-bottom: 2px solid blue;
-    margin: 1% 0;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid var(--color-secundario);
+  margin: 1% 0;
 }
 
 .contenedor {
-    margin: auto auto;
-    max-width: 1400px;
+  margin: auto auto;
+  max-width: 1400px;
 }
 
 .datos {
-    display: flex;
-    justify-content: space-evenly;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .contacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 2px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 2px;
 }
 .contacto input:hover {
-    outline-color: transparent;
-    border-color: green;
-    border-radius: 2%;
-    outline-style: solid ;
+  outline-color: transparent;
+  border-color: green;
+  border-radius: 2%;
+  outline-style: solid;
 }
 .contacto input:focus {
-    outline-color: #0000ff;
-    border-color: #0000ff;
-    border-radius: 5%;
-    outline-style: solid ;
+  outline-color: #0000ff;
+  border-color: #0000ff;
+  border-radius: 5%;
+  outline-style: solid;
 }
 #Enviar {
-    margin: 0.4em;
-    width: auto;
-    padding: 0.2em;
-    border-radius: 15%;
-    font-size: 1em;
-    border-color: var(--color-secundario);
-    background-color: var(--celeste);
+  margin: 0.4em;
+  width: auto;
+  padding: 0.2em;
+  border-radius: 15%;
+  font-size: 1em;
+  border-color: var(--color-secundario);
+  background-color: var(--celeste);
 
-    -webkit-box-shadow: 6px 5px 10px 5px rgba(152, 210, 235, 0.7);
-    -moz-box-shadow: 6px 5px 10px 5px rgba(152, 210, 235, 0.7);
-    box-shadow: 6px 5px 10px 5px rgba(152, 210, 235, 0.7);
+  -webkit-box-shadow: 6px 5px 10px 5px rgba(152, 210, 235, 0.7);
+  -moz-box-shadow: 6px 5px 10px 5px rgba(152, 210, 235, 0.7);
+  box-shadow: 6px 5px 10px 5px rgba(152, 210, 235, 0.7);
 }
 
 #Enviar:hover {
-    transition: 0.5s;
-    background-color: var(--beige);
-    -webkit-box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
-    -moz-box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
-    box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
+  transition: 0.5s;
+  background-color: var(--beige);
+  -webkit-box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
+  -moz-box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
+  box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
 }
 
 .empresa {
-    position: relative;
+  position: relative;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    border: 2px dotted brown; /*se puede quitar */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px dotted var(--color-secundario); /*se puede quitar */
 }
 
 .empresa p {
-    margin-top: 2px;
-    font-weight: 600;
+  margin-top: 2px;
+  font-weight: 600;
 }
-.empresa h3{
- border-bottom: 2px solid var(--color-secundario);
+.empresa h3 {
+  border-bottom: 2px solid var(--color-secundario);
 }
 
 .empresajpg {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 
-    background-image: url(../img/logo.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    opacity: 0.5;
+  background-image: url(../img/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
 }
 
 .empresajpg:hover {
-    transition: 0.5s;
-    opacity: 0.1;
-
+  transition: 0.5s;
+  opacity: 0.1;
 }
 
 aside {
-    margin-top: 2%;
-    text-align: center;
+  margin-top: 2%;
+  text-align: center;
 }
 aside h3 {
-    background-color: rgb(78, 156, 0);
+  background-color: var(--color-secundario);
 }
 
 iframe {
-    width: 100%;
+  width: 100%;
 }
