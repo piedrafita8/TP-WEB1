@@ -5,21 +5,230 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/inscripcion.css" />
     <title>Inscripcion</title>
   </head>
   <body>
     <header class="header">
       <div class="header-contenido">
-        <img class="logo" alt="logo" src="img/logo.png" />
-        <input type="text" />
-        <p>carrito logo</p>
+        <a href="index.html">
+          <img class="logo" alt="logo" src="img/logo.png" />
+        </a>
+        <form action="#" method="post" class="formulario">
+          <datalist id="opciones">
+            <option value="Inicio"></option>
+            <option value="Detalle de curso"></option>
+            <option value="Inscripcion"></option>
+            <option value="Giftcard"></option>
+            <option value="Contacto"></option>
+          </datalist>
+
+          <input type="text" name="search" list="opciones" class="input" />
+
+          <button type="submit" class="btn-search">
+            <img class="img-search" alt="search" src="img/icons/search.png" />
+          </button>
+        </form>
+
+        <div class="carrito">
+          <img class="icon" src="img/icons/cart.png" />
+          <p class="cantidad">1</p>
+        </div>
+      </div>
+      <div>
+        <nav class="navbar">
+          <ul>
+            <li class="item">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="item">
+              <a href="curso.html">Curso</a>
+            </li>
+            <li class="item">
+              <a href="inscripcion.html">Inscripcion</a>
+            </li>
+            <li class="item">
+              <a href="giftcard.html">Giftcard</a>
+            </li>
+            <li class="item">
+              <a href="contacto.html">Contacto</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
+    <main>
+      <section class="inscripcionContainer">
+        <article class="inscripcionTable">
+          <h2>Inscripcion a curso: [PLACEHOLDER]</h2>
+          <form action="#" method="get">
+            <table>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="nombre_1"
+                    id="nombre_1"
+                    placeholder="Nombre"
+                    required
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="apellido_1"
+                    id="apellido_1"
+                    placeholder="Apellido"
+                    required
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="dni_1"
+                    id="dni_1"
+                    placeholder="Numero de Documento"
+                    required
+                  >
+                </td>
+                <td>
+                  <input 
+                    type="button" 
+                    value="Agregar fila"
+                  >
+                  <input 
+                    type="button" 
+                    value="Eliminar fila"
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="nombre_2"
+                    id="nombre_2"
+                    placeholder="Nombre"
+                    required
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="apellido_2"
+                    id="apellido_2"
+                    placeholder="Apellido"
+                    required
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="dni_2"
+                    id="dni_2"
+                    placeholder="Numero de Documento"
+                    required
+                  >
+                </td>
+                <td>
+                  <input 
+                    type="button" 
+                    value="Agregar fila"
+                  >
+                  <input 
+                    type="button" 
+                    value="Eliminar fila"
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input
+                    type="text"
+                    name="nombre_3"
+                    id="nombre_3"
+                    placeholder="Nombre"
+                    required
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="apellido_3"
+                    id="apellido_3"
+                    placeholder="Apellido"
+                    required
+                  >
+                </td>
+                <td>
+                  <input
+                    type="text"
+                    name="dni_3"
+                    id="dni_3"
+                    placeholder="Numero de Documento"
+                    required
+                  >
+                </td>
+                <td>
+                  <input 
+                    type="button" 
+                    value="Agregar fila"
+                  >
+                  <input 
+                    type="button" 
+                    value="Eliminar fila"
+                  >
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">
+                  <h3 id="inscripcionMonto">Monto: $9.999</h3>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <input 
+                    type="submit" 
+                    class="inscripcionButtonDecision"
+                    value="Confirmar" 
+                  />
+                </td>
+              </tr>
+            </table>
+
+
+          </form>
+        </article>
+      </section>
+    </main>
     <footer class="footer">
-      <p>Santiago Piedrafita</p>
-      <p>Jorge Villalba</p>
-      <p>Agustin Pucci</p>
-      <p>Copyright 2023</p>
+      <div class="datos-personales">
+        <p>Santiago Piedrafita</p>
+        <p>Jorge Villalba</p>
+        <p>Agustin Pucci</p>
+      </div>
+      <div class="menu-inferior">
+        <a href="index.html">Home</a>
+        <a href="calendario.html">Calendario</a>
+        <a href="contacto.html">Contacto</a>
+        <a href="curso.html">Curso</a>
+        <a href="giftcard.html">Giftcard</a>
+        <a href="inscripcion.html">Inscripcion</a>
+      </div>
+      <div class="redes-sociales">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img class="icon" src="img/icons/fb.png" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img class="icon" src="img/icons/ig.png" />
+        </a>
+        <a href="https://www.twitter.com/" target="_blank">
+          <img class="icon" src="img/icons/tw.png" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img class="icon" src="img/icons/yt.png" />
+        </a>
+      </div>
     </footer>
   </body>
 </html>

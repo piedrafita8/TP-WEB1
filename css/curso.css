@@ -1,65 +1,206 @@
-.contenedor{
-    margin: 5px 6%;
-}
-/*Primera seccion*/
-
-/*Primer Article*/
-.jpgdesc{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.cursojpg{
-    display: flex;
-    width: 60%;
-    height: 60%;
-    justify-content: center;
-}
-.cursojpg img{
-    width: 90%;
-    height: 90%;
-}
-.cursodesc{
-    margin: 3%;
-    width: 100%;
-}
-.cursodesc h2{
-    text-align: center;
-    margin-bottom: 3%;
-}
-.cursodesc p{
-    margin-bottom: 1%;
-}
-li{
-    list-style:square;
-    margin: 2px;
-}
-/*Segundo Article*/
-.centrado{
-    text-align: center;
-
-}
-.contenido{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.contenedor {
+    margin: auto auto;
+    max-width: 1400px;
 }
 
-/*Segunda seccion*/
-.doc h2{
-    margin-left: 4%;
-}
-.docente{
+/* ----Primera seccion----*/
+
+/*----------------- Primer Article --------*/
+.jpgdesc {
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    height: auto;
+    margin-bottom: 1em;
 }
-.profejpg{
+
+.cursojpg {
     display: flex;
-   width: 25%;
-   height: 25%;
+    width: 40.3%;
+    height: auto;
+    justify-content: center;
+    position: relative;
 }
-.profejpg img{
-    width: 90%;
-    height: 90%;
+
+.precio-curso {
+    background-color: rgba(0, 0, 0, 0.394);
+    background-image: url(../img/curso/20usdw.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    width: 27%;
+    height: 10%;
+    position: absolute;
+    background-position: center;
+    bottom: 2px;
+    right: 1em;
+    border-radius: 10%;
+}
+
+.cursojpg img {
+    max-width: 100%;
+    border-radius: 20%;
+}
+
+h2 {
+    text-align: center;
+    border-bottom: 2px solid var(--color-secundario);
+    margin-top: 20px;
+    margin: 1% 0;
+}
+
+h3 {
+    margin: 1em;
+}
+
+.cursodesc {
+    margin: 2%;
+    width: 75%;
+    height: 100%;
+}
+
+.cursodesc p {
+    margin-bottom: 1%;
+}
+
+.insc {
+    position: relative;
+    width: 100%;
+    height: 1em;
+}
+
+.insc a {
+    position: absolute;
+    right: 0.5em;
+    text-decoration: none;
+    margin: 0.2em;
+    padding: 0.4em;
+    border-radius: 10%;
+    color: var(--celeste);
+    font-size: 1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-secundario);
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.insc a:hover {
+    background-color: var(--beige);
+    color: var(--color-secundario);
+}
+
+.unidades li {
+    list-style: none;
+}
+
+/* ----------Segundo Article -------------*/
+.centrado {
+    text-align: center;
+    margin-bottom: 2%;
+    background-image: url(../img/d5.png);
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.iconu {
+    padding: 1px;
+    width: 1em;
+    margin-right: 0.4em;
+    /*border: 1px #00ff00 solid; --- usado en la lucha por darles un
+    tamaño adecuado---*/
+    filter: invert(90%);
+}
+
+/* ---------- Segunda seccion -------------*/
+.doc {
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 2%;
+    background-color: var(--color-secundario);
+}
+
+.docente {
+    min-height: 20%;
+    min-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.profe {
+    width: 30%;
+    margin: auto;
+}
+
+.profedesc {
+    width: 60%;
+    margin: 0 auto auto auto;
+}
+
+.profedesc ul {
+    margin-top: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.profedesc li {
+    list-style: none;
+    width: calc(33.3% - 2em);
+}
+
+.profejpg {
+    max-width: 60%;
     border-radius: 50%;
+}
+
+.alinear {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    align-items: center;
+}
+
+.iconval {
+    padding: 1px;
+    width: 1em;
+    margin-right: 0.4em;
+    filter: invert(100%);
+}
+
+/*------------ Otros cursos / Aside ------------*/
+aside {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.otrosCursos {
+    width: calc(25% - 1em);
+    text-align: center;
+    position: relative;
+}
+
+.otrosCursos img {
+    width: 100%;
+    height: 15em;
+}
+
+.otrosCursos a {
+    text-decoration: none;
+    color: var(--celeste);
+}
+.otroValor {
+    position: absolute;
+    max-width: fit-content;
+    bottom: 0.4em;
+    right: 0.2em;
+    background-color: black;
+    border-radius: 15%;
+    border: 1px var(--celeste) solid;
 }

@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+.contenido h2 {
+  font-family: "Nunito", sans-serif;
+}
+
+.banner img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.pasos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 100px 0px;
+}
+
+.paso-item {
+  text-align: center;
+  background-color: var(--color-secundario);
+  width: 20%;
+  height: fit-content;
+  padding: 20px;
+
+  box-shadow: 9px 11px 0px -3px var(--celeste);
+  -webkit-box-shadow: 9px 11px 0px -3px var(--celeste);
+  -moz-box-shadow: 9px 11px 0px -3px var(--celeste);
+}
+
+.payment-content {
+  margin-bottom: 50px;
+}
+
+.payment-title {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.payment-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  background-color: var(--color-secundario);
+}
+
+.method {
+  width: 200px;
+}
+
+.method img {
+  width: 100%;
+}
+
+.cursos {
+  margin: 80px 0px;
+}
+
+.cursos h2 {
+  width: fit-content;
+  margin: 15px auto;
+}
+
+.cursos-grid {
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+.curso {
+  border: 1px solid var(--celeste);
+  padding: 15px;
+}
+
+.curso-img {
+  position: relative;
+}
+
+.curso-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: fill;
+}
+
+.curso-img span {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  padding: 4px;
+  border-radius: 4px;
+  font-weight: bold;
+  background-color: var(--color-secundario);
+}
+
+.curso-info {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+}
+
+.curso-info h3 {
+  font-size: 32px;
+  text-align: end;
+}
+
+.curso-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.curso-btn {
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: var(--celeste);
+  cursor: pointer;
+  text-align: end;
+}
+
+.curso-btn:hover {
+  text-decoration: underline;
+}
+
+.curso-btn a {
+  text-decoration: none;
+  color: var(--celeste);
+}
+
+.cursos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  width: 90%;
+  margin: auto;
+}
