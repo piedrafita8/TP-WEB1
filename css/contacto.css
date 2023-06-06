@@ -6,8 +6,9 @@ h2 {
 }
 
 .contenedor {
-  margin: auto auto;
-  max-width: 1400px;
+  margin: auto;
+  width: 95%;
+  max-width: 88em;
 }
 
 .datos {

@@ -1,26 +1,33 @@
+
+/* ---- Estilo for PC ---- */
+    
 .contenedor {
     margin: auto auto;
-    max-width: 1400px;
+    width: 95%;
+    max-width: 88em;
 }
 
 /* ----Primera seccion----*/
 
 /*----------------- Primer Article --------*/
 .jpgdesc {
-    display: flex;
+    /*display: flex;
+    flex-direction: row;
     justify-content: space-around;
+    */
     align-items: center;
     height: auto;
     margin-bottom: 1em;
-}
+} 
 
 .cursojpg {
-    display: flex;
+    /*display: flex;
     width: 40.3%;
+    justify-content: center; */
     height: auto;
-    justify-content: center;
     position: relative;
 }
+
 
 .precio-curso {
     background-color: rgba(0, 0, 0, 0.394);
@@ -34,11 +41,11 @@
     background-position: center;
     bottom: 2px;
     right: 1em;
-    border-radius: 10%;
+    border-radius: 2%;
 }
 
 .cursojpg img {
-    max-width: 100%;
+    width: 100%;
     border-radius: 20%;
 }
 
@@ -203,4 +210,53 @@ aside {
     background-color: black;
     border-radius: 15%;
     border: 1px var(--celeste) solid;
+}
+
+/* -------- EStilos for telefonos -------- */ 
+
+.jpgdesc{
+display: flex;
+flex-direction: column;
+
+height: auto;
+margin-bottom: 1em;
+}
+.cursojpg {
+display: flex;
+width: 85%;
+height: auto;
+justify-content: center;
+}
+
+
+
+/* -------- Estilos for tablet -------- */
+@media screen and (min-width: 48em){
+    .jpgdesc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+   .cursojpg {
+        display: flex;
+        width: 40.3%;
+        height: auto;
+        justify-content: center;
+    }
+}
+/* -------- Estilos for pc -------- */
+@media screen and (min-width: 60em){
+    .jpgdesc {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: auto;
+    }
+    .cursojpg {
+        display: flex;
+        width: 40.3%;
+        height: auto;
+        justify-content: center;
+    }
 }
