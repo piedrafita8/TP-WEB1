@@ -100,15 +100,20 @@ h3 {
 }
 
 /* ----------Segundo Article -------------*/
+.m-b{
+    margin-bottom: 2em;
+}
 .centrado {
     text-align: center;
-    margin-bottom: 2%;
     background-image: url(../img/d5.png);
 }
 
 .contenido {
+    /*
     display: flex;
     align-items: center;
+    
+    */
     justify-content: space-evenly;
 }
 
@@ -125,16 +130,16 @@ h3 {
 .doc {
     text-align: center;
     padding: 5px;
-    margin-bottom: 2%;
     background-color: var(--color-secundario);
 }
 
 .docente {
     min-height: 20%;
-    min-width: 100%;
+    min-width: 100%;/*
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+*/
 }
 
 .profe {
@@ -214,6 +219,7 @@ aside {
 
 /* -------- Estilos for telefonos -------- */
 @media screen and (min-width: 12.5em) {
+    /*Primer Article*/
     .jpgdesc {
         flex-direction: column;
 
@@ -231,37 +237,53 @@ aside {
         margin: 1%;
         width: 95%;
     }
+
+    /*Segundo Article*/
+    .contenido {
+        display: inline;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    /*Segunda Section---------------*/
+    .docente {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
 }
 
 
 /* -------- Estilos for tablet -------- */
-@media screen and (min-width: 48em) {
-    #tCurso{
-        
-    }
+@media screen and (min-width: 40em) {
+    /*Primer Article*/
     .jpgdesc {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        
-
     }
 
     .cursojpg {
         display: flex;
         width: 40%;
-        
-
     }
 
     .cursodesc {
         margin: 2%;
         width: 80%;
     }
+    /*Segundo Article sin cambios ???*/
+    .contenido{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+    }
 }
 
 /* -------- Estilos for pc escritorio-------- */
 @media screen and (min-width: 60em) {
+    /*Primer Article*/
     .jpgdesc {
         display: flex;
         flex-direction: row;
@@ -277,5 +299,19 @@ aside {
     .cursodesc {
         margin: 2%;
         width: 70%;
+    }
+    /*Segundo Article sin cambios ?*/
+    .contenido{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    /*SEGUNDA SECTION ---------*/
+    .docente {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 }
