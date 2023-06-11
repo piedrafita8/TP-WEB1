@@ -220,7 +220,7 @@
 
 
   /*Para celulares*/
-@media only screen and (min-width: 20em) {
+@media only screen and (max-width: 50em) {
   .giftCardSection{
     display:flex;
     flex-direction: column;
