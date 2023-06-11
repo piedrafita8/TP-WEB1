@@ -117,32 +117,24 @@
             text-align: center;
         }
     
-        .inscripcion-item input[type=text]{
+        .inscripcion-item input[type=text], input[type=number], input[type=email], input[type=tel]{
             padding: 0.333em 0.333em;
             width: 75%;
-            font-size: 1.80em;
+            font-size: 1.25em;
         }
     
-        .inscripcion-item input[type=number]{
-            padding: 0.333em 0.333em;
-            width: 75%;
-            font-size: 1.80em;
-        }
     
-        .inscripcion-item input[type=text]:focus{
+        .inscripcion-item input[type=text],input[type=number], input[type=email], input[type=tel]:focus{
             outline: none;
         }
     
-        .inscripcion-item input[type=number]:focus{
-            outline: none;
-        }
 
         .inscripcion-addrow{
             padding: 0.5em 0.5em;
             text-align: center;
             grid-column-start: 2;
             grid-row-start: 1;
-            grid-row-end: 3;
+            grid-row-end: 5;
         }
     
         .inscripcion-decision{
@@ -174,7 +166,7 @@
             background-color: var(--celeste);
             border: none;
             color: var(--color-fondo);
-            padding: 0.875em 10em;
+            padding: 0.875em 5em;
             margin: 0.25em;
             text-align: center;
             font-weight: bold;;
@@ -195,7 +187,7 @@
 
         .inscripcion-persona{
             display: grid;
-            grid-template-columns: 30% 30% 30% 10%;
+            grid-template-columns: 18% 18% 18% 18% 18% 10%;
             align-items: center;
         }
     
@@ -204,30 +196,22 @@
             text-align: center;
         }
     
-        .inscripcion-item input[type=text]{
+        .inscripcion-item input[type=text], input[type=number], input[type=email], input[type=tel]{
             padding: 0.75em 0.5em;
-            width: 80%;
-            font-size: 1.375em;
+            width: 85%;
+            font-size: 1em;
         }
     
-        .inscripcion-item input[type=number]{
-            padding: 0.75em 0.5em;
-            width: 80%;
-            font-size: 1.375em;
-        }
     
-        .inscripcion-item input[type=text]:focus{
+        .inscripcion-item input[type=text], input[type=number], input[type=email], input[type=tel]:focus{
             outline: none;
         }
     
-        .inscripcion-item input[type=number]:focus{
-            outline: none;
-        }
 
         .inscripcion-addrow{
             padding: 0.5em 1em;
             text-align: center;
-            grid-column: 4;
+            grid-column: 6;
         }
     
         .inscripcion-decision{
