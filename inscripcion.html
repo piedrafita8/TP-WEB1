@@ -62,140 +62,64 @@
         <article class="inscripcionTable">
           <h2>Inscripcion a curso: [PLACEHOLDER]</h2>
           <form action="#" method="get">
-            <table>
-              <tr>
-                <td>
+            <div class="inscripcion-grid">
+              <div class="inscripcion-persona" id="inscripcion-persona-1">
+                <div class="inscripcion-item">
                   <input
-                    type="text"
-                    name="nombre_1"
-                    id="nombre_1"
-                    placeholder="Nombre"
-                    required
+                  type="text"
+                  name="nombre_1"
+                  id="nombre_1"
+                  placeholder="Nombre"
+                  required
                   >
-                </td>
-                <td>
+                </div>
+                <div class="inscripcion-item">
                   <input
-                    type="text"
-                    name="apellido_1"
-                    id="apellido_1"
-                    placeholder="Apellido"
-                    required
+                  type="text"
+                  name="apellido_1"
+                  id="apellido_1"
+                  placeholder="Apellido"
+                  required
                   >
-                </td>
-                <td>
+                </div>
+                <div class="inscripcion-item">
                   <input
-                    type="text"
-                    name="dni_1"
-                    id="dni_1"
-                    placeholder="Numero de Documento"
-                    required
+                  type="number"
+                  name="dni_1"
+                  id="dni_1"
+                  placeholder="Numero de Documento"
+                  required
                   >
-                </td>
-                <td>
+                </div>
+  
+                <div class="inscripcion-addrow">
                   <input 
-                    type="button" 
-                    value="Agregar fila"
-                  >
-                  <input 
-                    type="button" 
-                    value="Eliminar fila"
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    name="nombre_2"
-                    id="nombre_2"
-                    placeholder="Nombre"
-                    required
-                  >
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    name="apellido_2"
-                    id="apellido_2"
-                    placeholder="Apellido"
-                    required
-                  >
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    name="dni_2"
-                    id="dni_2"
-                    placeholder="Numero de Documento"
-                    required
-                  >
-                </td>
-                <td>
-                  <input 
-                    type="button" 
-                    value="Agregar fila"
+                  type="button" 
+                  class="inscripcionButton-addrow"
+                  value="Agregar fila"
                   >
                   <input 
-                    type="button" 
-                    value="Eliminar fila"
+                  type="button" 
+                  class="inscripcionButton-addrow"
+                  value="Eliminar fila"
                   >
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input
-                    type="text"
-                    name="nombre_3"
-                    id="nombre_3"
-                    placeholder="Nombre"
-                    required
-                  >
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    name="apellido_3"
-                    id="apellido_3"
-                    placeholder="Apellido"
-                    required
-                  >
-                </td>
-                <td>
-                  <input
-                    type="text"
-                    name="dni_3"
-                    id="dni_3"
-                    placeholder="Numero de Documento"
-                    required
-                  >
-                </td>
-                <td>
-                  <input 
-                    type="button" 
-                    value="Agregar fila"
-                  >
-                  <input 
-                    type="button" 
-                    value="Eliminar fila"
-                  >
-                </td>
-              </tr>
-              <tr>
-                <td colspan="4">
-                  <h3 id="inscripcionMonto">Monto: $9.999</h3>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <input 
-                    type="submit" 
-                    class="inscripcionButtonDecision"
-                    value="Confirmar" 
-                  />
-                </td>
-              </tr>
-            </table>
+                </div>
+              </div>
 
+              <div class="inscripcion-divisor"> </div>
+
+              <div class="inscripcion-decision">
+                <h3>Monto: </h3>
+                <h3 id="inscripcionMonto">$0.000</h3> 
+              </div>
+              <div class="inscripcion-decision">
+                <input 
+                type="submit" 
+                class="inscripcionButton-decision"
+                value="Confirmar" 
+                />
+              </div>
+            </div>
 
           </form>
         </article>

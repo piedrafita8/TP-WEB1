@@ -1,79 +1,202 @@
-.inscripcionContainer{
-    margin: auto auto;
-    max-width: 1400px;
-}
+    /*Para PC y Celular*/
 
-.inscripcionContainer h2{
-    margin: 16px 0px;
-    font-size: 32px;
-    text-align: center;
-}
+    .inscripcionContainer{
+        margin: auto auto;
+        max-width: 87.5em;
+    }
+    
+    .inscripcionContainer h2{
+        margin: 1em 0em;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    .inscripcionContainer h3{
+        font-size: 1.75em;
+        text-align: center;
+    }
 
-.inscripcionContainer h3{
-    margin: 16px 0px;
-    font-size: 28px;
-    text-align: center;
-}
+    .inscripcion-grid{
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+    }
 
-.inscripcionTable table{
-    border-collapse: collapse;
-    width: 100%;
-}
+    .inscripcion-divisor{
+        border-top: 0.125em dashed var(--color-secundario);
+    }
 
-.inscripcionTable td {
-    padding: 8px 16px;
-    text-align: center;
-}
+    /*Para celulares*/
+    @media only screen and (max-width: 50em) {
 
-.inscripcionTable td:nth-child(4) {
-    padding: 2px 2px;
-    text-align: left;
-    width: 10%;
-}
+        .inscripcion-persona{
+            display: grid;
+            grid-template-columns: 60% 30%;
+            align-items: center;
+        }
 
-.inscripcionTable input[type=text]{
-    padding: 12px 8px;
-    width: 80%;
-    font-size: 22px;
-}
+        .inscripcion-item{
+            padding: 0.5em 1em;
+            text-align: center;
+        }
+    
+        .inscripcion-item input[type=text]{
+            padding: 0.333em 0.333em;
+            width: 75%;
+            font-size: 1.80em;
+        }
+    
+        .inscripcion-item input[type=number]{
+            padding: 0.333em 0.333em;
+            width: 75%;
+            font-size: 1.80em;
+        }
+    
+        .inscripcion-item input[type=text]:focus{
+            outline: none;
+        }
+    
+        .inscripcion-item input[type=number]:focus{
+            outline: none;
+        }
 
-.inscripcionTable input[type=text]:focus{
-    outline: none;
-  }
+        .inscripcion-addrow{
+            padding: 0.5em 0.5em;
+            text-align: center;
+            grid-column-start: 2;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+    
+        .inscripcion-decision{
+            padding: 0.5em 1em;
+            text-align: center;
+        }
+    
+    
+        .inscripcionButton-addrow{
+            background-color: var(--celeste);
+            border: none;
+            color: var(--color-fondo);
+            padding: 0.5em 1em;
+            margin: 1em 0em;
+            text-align: center;
+            font-size: 1.25em;
+            border-radius: 0.75em;
+            transition-duration: 0.4s;
+        }
+    
+        .inscripcionButton-addrow:hover{
+            background-color: var(--color-secundario);
+            color: var(--celeste);
+          }
+    
+    
+    
+        .inscripcionButton-decision{
+            background-color: var(--celeste);
+            border: none;
+            color: var(--color-fondo);
+            padding: 0.875em 10em;
+            margin: 0.25em;
+            text-align: center;
+            font-weight: bold;;
+            font-size: 1.25em;
+            border-radius: 0.75em;
+            transition-duration: 0.4s;
+        }
+    
+        .inscripcionButton-decision:hover{
+            background-color: var(--color-secundario);
+            color: var(--celeste);
+        }
+    }
 
-.inscripcionTable input[type=button]{
-    background-color: var(--celeste);
-    border: none;
-    color: var(--color-fondo);
-    padding: 5px 10px;
-    margin: 4px;
-    text-align: center;
-    font-size: 12px;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
 
-.inscripcionTable input[type=button]:hover{
-    background-color: var(--color-secundario);
-    color: var(--celeste);
-  }
+    /*Para PC */
+    @media only screen and (min-width: 50em) {
 
-  .inscripcionButtonDecision{
-    background-color: var(--celeste);
-    border: none;
-    color: var(--color-fondo);
-    padding: 14px 80px;
-    margin: 4px;
-    text-align: center;
-    font-weight: bold;;
-    font-size: 20px;
-    border-radius: 12px;
-    transition-duration: 0.4s;
-    cursor: pointer;
-}
+        .inscripcion-persona{
+            display: grid;
+            grid-template-columns: 30% 30% 30% 10%;
+            align-items: center;
+        }
+    
+        .inscripcion-item{
+            padding: 0.5em 1em;
+            text-align: center;
+        }
+    
+        .inscripcion-item input[type=text]{
+            padding: 0.75em 0.5em;
+            width: 80%;
+            font-size: 1.375em;
+        }
+    
+        .inscripcion-item input[type=number]{
+            padding: 0.75em 0.5em;
+            width: 80%;
+            font-size: 1.375em;
+        }
+    
+        .inscripcion-item input[type=text]:focus{
+            outline: none;
+        }
+    
+        .inscripcion-item input[type=number]:focus{
+            outline: none;
+        }
 
-.inscripcionButtonDecision:hover{
-    background-color: var(--color-secundario);
-    color: var(--celeste);
-  }
+        .inscripcion-addrow{
+            padding: 0.5em 1em;
+            text-align: center;
+            grid-column: 4;
+        }
+    
+        .inscripcion-decision{
+            padding: 0.5em 1em;
+            text-align: center;
+        }
+    
+    
+        .inscripcionButton-addrow{
+            background-color: var(--celeste);
+            border: none;
+            color: var(--color-fondo);
+            padding: 0.313em 0.625em;
+            margin: 0.25em;
+            text-align: center;
+            font-size: 0.75em;
+            border-radius: 0.75em;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            
+        }
+    
+        .inscripcionButton-addrow:hover{
+            background-color: var(--color-secundario);
+            color: var(--celeste);
+          }
+    
+    
+    
+        .inscripcionButton-decision{
+            background-color: var(--celeste);
+            border: none;
+            color: var(--color-fondo);
+            padding: 0.875em 5em;
+            margin: 0.25em;
+            text-align: center;
+            font-weight: bold;;
+            font-size: 1.25em;
+            border-radius: 0.75em;
+            transition-duration: 0.4s;
+            cursor: pointer;
+        }
+    
+        .inscripcionButton-decision:hover{
+            background-color: var(--color-secundario);
+            color: var(--celeste);
+        }
+    
+    }
