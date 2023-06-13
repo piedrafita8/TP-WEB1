@@ -135,9 +135,10 @@ h3 {
 
 .docente {
     min-height: 20%;
-    min-width: 100%;/*
+    min-width: 100%;
     display: flex;
     flex-wrap: wrap;
+    /*
     flex-direction: row;
 */
 }
@@ -148,21 +149,23 @@ h3 {
 }
 
 .profedesc {
-    width: 60%;
     margin: 0 auto auto auto;
 }
 
 .profedesc ul {
-    margin-top: 2em;
+    margin-top: 1.5em;
+    /*
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: row;*/
     justify-content: space-around;
 }
 
 .profedesc li {
     list-style: none;
+    /*
     width: calc(33.3% - 2em);
+    */
 }
 
 .profejpg {
@@ -170,11 +173,13 @@ h3 {
     border-radius: 50%;
 }
 
-.alinear {
+.alinearC {
+
     display: flex;
     flex-direction: row;
     width: auto;
     align-items: center;
+
 }
 
 .iconval {
@@ -187,14 +192,18 @@ h3 {
 /*------------ Otros cursos / Aside ------------*/
 aside {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 1%;
 }
 
 .otrosCursos {
+    /*
     width: calc(25% - 1em);
     text-align: center;
     position: relative;
+    */
 }
 
 .otrosCursos img {
@@ -216,9 +225,16 @@ aside {
     border-radius: 15%;
     border: 1px var(--celeste) solid;
 }
+.as_t{
+    margin-bottom: 0.8em;
+    border-bottom: 0.1em var(--celeste) solid;
+}
+
+
+
 
 /* -------- Estilos for telefonos -------- */
-@media screen and (min-width: 12.5em) {
+@media screen and (max-width: 55em) {
     /*Primer Article*/
     .jpgdesc {
         flex-direction: column;
@@ -247,42 +263,49 @@ aside {
 
     /*Segunda Section---------------*/
     .docente {
+        /*
         display: flex;
-        flex-wrap: wrap;
+        flex-wrap: wrap;*/
         flex-direction: column;
     }
-}
 
-
-/* -------- Estilos for tablet -------- */
-@media screen and (min-width: 40em) {
-    /*Primer Article*/
-    .jpgdesc {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-    }
-
-    .cursojpg {
-        display: flex;
-        width: 40%;
-    }
-
-    .cursodesc {
-        margin: 2%;
+    .profedesc{
         width: 80%;
     }
-    /*Segundo Article sin cambios ???*/
-    .contenido{
+    .profedesc ul {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .alinearV{
         display: flex;
         flex-direction: row;
-        align-items: center;
-        
+        justify-content: start;
+        flex-wrap: wrap;
+        margin-left: 5%;
+        margin: 0 5% 1em 0 ;
     }
+    /* Otros cursos / Aside ------------*/
+    aside{
+        flex-wrap: wrap;
+    }
+    .otrosCursos {
+        width: calc(50% - 1em);
+        text-align: center;
+        position: relative;
+    }
+    .otrosCursos img{
+        width: 100%;
+        height:15em; 
+        /*con un carrusel creo puedo solucinar la incongruencia de h*/
+    }
+    
 }
 
+
+
 /* -------- Estilos for pc escritorio-------- */
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 55em) {
     /*Primer Article*/
     .jpgdesc {
         display: flex;
@@ -310,8 +333,33 @@ aside {
     /*SEGUNDA SECTION ---------*/
     .docente {
         width: 100%;
+        /*
         display: flex;
         flex-wrap: wrap;
+        */
         flex-direction: row;
     }
+
+    .profedesc {
+        width: 60%;
+    }
+    .profedesc ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .alinearV {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+    /* Otros cursos / Aside ------------*/
+    
+    .otrosCursos {
+        width: calc(25% - 1em);
+        text-align: center;
+        position: relative;
+    }
+
 }
