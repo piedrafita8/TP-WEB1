@@ -1,20 +1,28 @@
 h2 {
   text-align: center;
   width: 100%;
-  border-bottom: 2px solid var(--color-secundario);
+  border-bottom: 0.12em solid var(--color-secundario);
   margin: 1% 0;
 }
 
 .contenedor {
-  margin: auto;
-  width: 95%;
   max-width: 88em;
+  margin: auto;
+  /*
+  width: 95%;
+  */
 }
 
+/*----------- SECTION -----------*/
+
+/* ------- PRIMER ARTICLE --------- */
 .datos {
-  margin-top: 20px;
+  
+  margin: 2em 0;
+  /*
   display: flex;
   justify-content: space-evenly;
+  */
 }
 
 .contacto {
@@ -23,24 +31,30 @@ h2 {
   justify-content: space-between;
 }
 
-form {
+.formC {
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 2px;
+  margin: 1em;
 }
+.formC input {
+  margin-bottom: 0.5em;
+}
+
 .contacto input:hover {
   outline-color: transparent;
   border-color: green;
   border-radius: 2%;
   outline-style: solid;
 }
+
 .contacto input:focus {
   outline-color: #0000ff;
   border-color: #0000ff;
   border-radius: 5%;
   outline-style: solid;
 }
+
 #Enviar {
   margin: 0.4em;
   width: auto;
@@ -65,26 +79,32 @@ form {
 
 .empresa {
   position: relative;
-
+  height: auto;
+  /*border: 2px dotted var(--color-secundario);*/
+  /*se puede quitar el borde */
+}
+.datEmp {
+  /*
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content:space-around;
   align-items: center;
-  border: 2px dotted var(--color-secundario); /*se puede quitar */
+  */
+}
+.datEmp p {
+  /*margin-top: 2px;
+  font-weight: 600;*/
+}
+.datEmp h3 {
+  /*border-bottom: 2px solid var(--color-secundario);*/
 }
 
-.empresa p {
-  margin-top: 2px;
-  font-weight: 600;
-}
-.empresa h3 {
-  border-bottom: 2px solid var(--color-secundario);
-}
-
-.empresajpg {
+.empresajpg { /**/
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 0;
 
   background-image: url(../img/logo.png);
   background-size: contain;
@@ -102,10 +122,72 @@ aside {
   margin-top: 2%;
   text-align: center;
 }
+
 aside h3 {
   background-color: var(--color-secundario);
 }
 
-iframe {
-  width: 100%;
+
+
+/*-----------------------------CELULAR*/
+@media screen and (max-width: 50em) {
+  .contenedor {
+    width: 95%;
+  }
+
+  /*
+  .datos{
+    no lo utilizo ah
+  }*/
+  .empresajpg { /**/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+  }
+  iframe {
+    width: 100%;
+    height: 25%;
+  }
+}
+
+/*----------------------------ESCRITORIO*/
+@media screen and (min-width: 50em) {
+  .contenedor {
+    width: 90%;
+  }
+
+  .datos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .empresa{
+    display: flex;
+    flex-direction: column;
+  }
+  .datEmp {
+    /*no me permite separarlo con flex*/
+  }
+  .empresajpg { /**/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+  
+    background-image: url(../img/logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+  }
+  iframe {
+    width: 100%;
+  }
 }
