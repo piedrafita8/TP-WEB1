@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/slider/slick.css" />
+    <link rel="stylesheet" href="css/slider/slick-theme.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/home.css" />
     <title>Inicio</title>
@@ -59,8 +61,16 @@
     </header>
     <main class="contenido">
       <section>
-        <article class="banner">
-          <img src="img/home/banner.png" />
+        <article class="slider">
+          <div class="slick-slide">
+            <img src="img/slider/banner1.jpg" alt="" />
+          </div>
+          <div class="slick-slide">
+            <img src="img/slider/banner2.jpg" alt="" />
+          </div>
+          <div class="slick-slide">
+            <img src="img/slider/banner3.jpg" alt="" />
+          </div>
         </article>
       </section>
       <section class="pasos">
@@ -237,5 +247,22 @@
         </a>
       </div>
     </footer>
+
+    <script type="text/javascript" src="js/slider/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="js/slider/slick.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        /*$('.slider').slick();*/
+        $(".slider").slick({
+          draggable: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+          arrows: false,
+        });
+      });
+    </script>
   </body>
 </html>
