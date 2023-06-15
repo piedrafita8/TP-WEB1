@@ -1,5 +1,3 @@
-/* ---- Estilo for PC ---- */
-
 .contenedor {
     margin: auto auto;
     width: 95%;
@@ -233,7 +231,14 @@ aside {
 
 
 
-/* -------- Estilos for telefonos -------- */
+
+
+
+
+
+
+
+/* -------------------- ESTILOS FOR TELEFONO ---------------------------- */
 @media screen and (max-width: 55em) {
     /*Primer Article*/
     .jpgdesc {
@@ -304,7 +309,10 @@ aside {
 
 
 
-/* -------- Estilos for pc escritorio-------- */
+
+
+
+/* ----------------------------- ESTILOS FOR ESCRITORIO------------------- */
 @media screen and (min-width: 55em) {
     /*Primer Article*/
     .jpgdesc {
@@ -362,4 +370,9 @@ aside {
         position: relative;
     }
 
+}
+/*Java script class*/
+.d-none{
+    transition: 0.6;
+    display: none;
 }
