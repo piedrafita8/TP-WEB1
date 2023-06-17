@@ -371,8 +371,22 @@ aside {
     }
 
 }
+
+/*JAVA SCRIPTS CLASS*/
 /*Java script class*/
 .d-none{
-    transition: 0.6;
+    
     display: none;
+    transition: 1s;
+}
+.d-none{
+    transition: all 1s ease-in-out;
+}
+.unidades{
+    transition:0.9s;
+}
+
+article a{
+    text-decoration: none;
+    color: var(--celeste)
 }
