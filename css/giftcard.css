@@ -177,21 +177,6 @@
     font-weight: bold;
   }
 
-  .giftcardPos1{
-    top: 7.05em;
-    left: 5.85em;
-  }
-
-  .giftcardPos2{
-    top: -1.65em;
-    left: 5.85em;
-  }
-
-  .giftcardPos3{
-    top: -1.65em;
-    left: 0em;
-  }
-
   .giftcardFondo1{
     background: rgb(0,10,80);
     background: linear-gradient(45deg, rgba(0,10,80,1) 0%, rgba(0,100,255,1) 50%, rgba(0,10,80,1) 100%);
@@ -269,6 +254,23 @@
     display: inline-block;
     margin: 0.625em;
   }
+
+  .giftcardPos1{
+    position: absolute;
+    top: 53%;
+    left: 48%;
+  }
+
+  .giftcardPos2{
+    position: absolute;
+    top: 22.5%;
+    left: 48%;
+  }
+
+  .giftcardPos3{
+    position: absolute;
+    top: 22.5%;
+  }
 }
 
   /*Para PC */
@@ -330,4 +332,21 @@
     margin: 0.625em;
   }
   
+  .giftcardPos1{
+    position: absolute;
+    top: 15.1em;
+    left: 6.85em;
+  }
+
+  .giftcardPos2{
+    position: absolute;
+    top: 6.35em;
+    left: 6.85em;
+  }
+
+  .giftcardPos3{
+    position: absolute;
+    top: 6.35em;
+    left: 1em;
+  }
 }

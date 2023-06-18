@@ -68,9 +68,9 @@
               id="previewDest"
               class="giftcardDemoText giftcardColorText1 giftcardText1"
             >
-              [Inserte Destinatario]
+              [Nombre]
             </p>
-            <p id="previewMont" class="giftcardDemoMonto giftcardPos1">$0000</p>
+            <p id="previewMont" class="giftcardDemoMonto giftcardPos1">$00000</p>
           </div>
           <h3>Vista previa de resultado de Personalizacion.</h3>
         </article>
@@ -85,6 +85,7 @@
                 id="nameDestinatario"
                 class="giftcardFormInput giftcardFormInputDestinatario"
                 placeholder="Destinatario"
+                onchange="actualizarPreview(this)"
                 required
               />
             </h4>
@@ -96,6 +97,7 @@
                 id="monto"
                 class="giftcardFormInput giftcardFormInputMonto"
                 placeholder="Monto"
+                onchange="actualizarPreview(this)"
                 required
               />
             </h4>
@@ -111,6 +113,7 @@
                 id="selectColor1"
                 value="1"
                 checked="checked"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -123,6 +126,7 @@
                 name="selectColor"
                 id="selectColor2"
                 value="2"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -135,6 +139,7 @@
                 name="selectColor"
                 id="selectColor3"
                 value="3"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -147,6 +152,7 @@
                 name="selectColor"
                 id="selectColor4"
                 value="4"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -159,6 +165,7 @@
                 name="selectColor"
                 id="selectColor5"
                 value="5"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -171,6 +178,7 @@
                 id="selectFuente1"
                 value="20px"
                 checked="checked"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -181,6 +189,7 @@
                 name="selectFuente"
                 id="selectFuente2"
                 value="28px"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -191,6 +200,7 @@
                 name="selectFuente"
                 id="selectFuente3"
                 value="32px"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -201,6 +211,7 @@
                 name="selectFuente"
                 id="selectFuente4"
                 value="48px"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -211,6 +222,7 @@
                 name="selectFuente"
                 id="selectFuente5"
                 value="60px"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -228,6 +240,7 @@
                 id="selectUbicacion1"
                 value="1"
                 checked="checked"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -243,6 +256,7 @@
                 name="selectUbicacion"
                 id="selectUbicacion2"
                 value="2"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -258,6 +272,7 @@
                 name="selectUbicacion"
                 id="selectUbicacion3"
                 value="3"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -272,6 +287,7 @@
                 id="selectFondo1"
                 value="1"
                 checked="checked"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -284,6 +300,7 @@
                 name="selectFondo"
                 id="selectFondo2"
                 value="2"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -296,6 +313,7 @@
                 name="selectFondo"
                 id="selectFondo3"
                 value="3"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -308,6 +326,7 @@
                 name="selectFondo"
                 id="selectFondo4"
                 value="4"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -320,6 +339,7 @@
                 name="selectFondo"
                 id="selectFondo5"
                 value="5"
+                onchange="actualizarPreview(this)"
               />
             </div>
 
@@ -358,5 +378,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/giftcard.js"></script>
   </body>
 </html>
