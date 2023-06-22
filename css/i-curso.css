@@ -15,12 +15,13 @@
 .cursos-grid {
     margin: auto;
     width: fit-content;
-    margin-bottom: 50px;
+    margin-bottom: 3em;
 }
 
 .curso {
     border: 1px solid var(--celeste);
     padding: 1em;
+    width: calc(25%-1em);
 }
 
 .curso-img {
@@ -29,16 +30,16 @@
 
 .curso-img img {
     width: 100%;
-    height: 250px;
+    height: 15.6em;
     object-fit: fill;
 }
 
 .curso-img span {
     position: absolute;
-    top: 4px;
-    left: 4px;
-    padding: 4px;
-    border-radius: 4px;
+    top: 0.25em;
+    left: 0.25em;
+    padding: 0.25em;
+    border-radius: 0.25em;
     font-weight: bold;
     background-color: var(--color-secundario);
 }
@@ -76,11 +77,45 @@
     text-decoration: none;
     color: var(--celeste);
 }
-
+.curso-btn p{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.cursos-grid {
+    display: grid;
+    grid-auto-rows: calc(10%-1em);
+    grid-template-columns: repeat(auto-fit, minmax(20em,1fr));
+    grid-gap:1.5em;
+    width: 100%;
+    /*grid-template-columns: repeat(3, 1fr);*/
+    /*grid-gap: 1.9em;*/
+    /*margin: auto;*/
+}
+/*
 .cursos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 30px;
-    width: 90%;
+    grid-gap: 1.9em;
+    width: 95%;
     margin: auto;
+}*/
+
+/*--------- RESPONISVE FOR CELULARES*/
+
+/*@media screen and (max-width: 55em){
+    .cursos-grid {
+        display: grid;
+
+        grid-template-columns:repeat(1);
+        /*grid-gap: 1.9em;
+
+    }
 }
+@media screen and(min-width: 55em){
+    .cursos-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.9em;
+
+    }
+}*/
