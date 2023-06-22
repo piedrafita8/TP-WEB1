@@ -1,0 +1,86 @@
+.contenedor {
+    margin: auto auto;
+    width: 95%;
+    max-width: 88em;
+}
+.cursos {
+    margin: 2.5em 0;
+}
+
+.cursos h2 {
+    width: fit-content;
+    margin: 1em auto;
+}
+
+.cursos-grid {
+    margin: auto;
+    width: fit-content;
+    margin-bottom: 50px;
+}
+
+.curso {
+    border: 1px solid var(--celeste);
+    padding: 1em;
+}
+
+.curso-img {
+    position: relative;
+}
+
+.curso-img img {
+    width: 100%;
+    height: 250px;
+    object-fit: fill;
+}
+
+.curso-img span {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: var(--color-secundario);
+}
+
+.curso-info {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+.curso-info h3 {
+    font-size: 32px;
+    text-align: end;
+}
+
+.curso-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.curso-btn {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: var(--celeste);
+    cursor: pointer;
+    text-align: end;
+}
+
+.curso-btn:hover {
+    text-decoration: underline;
+}
+
+.curso-btn a {
+    text-decoration: none;
+    color: var(--celeste);
+}
+
+.cursos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    width: 90%;
+    margin: auto;
+}
