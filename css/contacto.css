@@ -55,7 +55,7 @@ h2 {
   outline-style: solid;
 }
 
-#Enviar {
+#enviar {
   margin: 0.4em;
   width: auto;
   padding: 0.2em;
@@ -69,14 +69,17 @@ h2 {
   box-shadow: 6px 5px 10px 5px rgba(152, 210, 235, 0.7);
 }
 
-#Enviar:hover {
+#enviar:hover {
   transition: 0.5s;
   background-color: var(--beige);
   -webkit-box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
   -moz-box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
   box-shadow: 6px 5px 10px 5px rgba(158, 133, 118, 1);
 }
-
+#mensaje-error{
+  color: #f00;
+  padding: 1em;
+}
 .empresa {
   position: relative;
   height: auto;
