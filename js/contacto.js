@@ -1,8 +1,14 @@
-//DECLARO VARIABLES 
+//DECLARO 
 let formulario = document.querySelector("#form");
-let consulta= document.getElementById("consulta");
+let consulta = document.getElementById("consulta");
 let mError = document.getElementById("mensaje-error");
+let limite = document.getElementById("limite");
+//PARA EL TEXTAREA Y SU CONTADOR DE CARACTERES
+let contador = 0;
+let maximo = 1000;
 
+
+//EXPRESIONES REGULARES PARA EL FORM
 let expRegPalabra = /^[a-zA-Z]+$/;
 let expRegCorreo = /^[0-9a-zA-Z.-._..]+\@[0-9a-zA-Z.-._..]+\.[0-9a-zA-Z]+$/;
 let expRegCel = /^[0-9]{4}\-[0-9]{4}$/;
@@ -15,8 +21,16 @@ formulario.addEventListener("submit", (e) => {
     validar();
 });
 
-consulta.addEventListener("keypress",()=>{
-    
+//CANTIDAD DE CARACTERES DEL TEXTAREA
+consulta.addEventListener("keyup", () => {
+    contador = consulta.value.length;
+    console.log(contador);
+    if (contador <= 1000) {
+        limite.innerHTML = (maximo - contador) + "/" + maximo;
+    } else {
+        consulta.value = consulta.value.substring(0, 1000); /*para esta linea esta linea hubo que googlear pa que mentir */
+    }
+    /*No pense que funcionara :0 */
 });
 
 
@@ -35,14 +49,14 @@ function validar() {
     if ((apellido == "") || (apellido.length < 2) || (!expRegPalabra.test(apellido))) {
         console.log("Error apellido invalido");
         error = true;
-        mensajesError += "<p>El campo apellido es invalido</p>"
+        mensajesError += "<p>El Campo apellido es invalido</p>"
     }
     //---------- VALIDO CORREO ELECTRONICO
     let correo = document.querySelector("#correo").value;
-    if((correo=="") || (!expRegCorreo.test(correo))){
+    if ((correo == "") || (!expRegCorreo.test(correo))) {
         console.log("error correo")
-        error=true;
-        mensajesError+="<p>El Correo no es valido</p>";
+        error = true;
+        mensajesError += "<p>El Correo no es valido</p>";
     }
 
     //---------- VALIDO TELEFONO
@@ -53,7 +67,7 @@ function validar() {
             if (!expRegCel2.test(telefono)) {
                 console.log("error telefono no valido sin guion");
                 error = true;
-                mensajesError += "<p>El telefono no es valido</p>";
+                mensajesError += "<p>El Telefono ingresado no es valido</p>";
             }
         }
     }

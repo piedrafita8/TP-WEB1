@@ -54,6 +54,11 @@ h2 {
   border-radius: 5%;
   outline-style: solid;
 }
+#limite{
+  text-align: end;
+  color: grey;
+  font-size: 0.8em;
+}
 
 #enviar {
   margin: 0.4em;
