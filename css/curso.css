@@ -141,7 +141,15 @@ h3 {
     tamaño adecuado---*/
     filter: invert(90%);
 }
-
+#cambiar{
+    font-style: none;
+    border-style: none;
+    width: 50%;
+    border-radius: 0.2em;
+    background-color: #98d2ebb6;
+    padding: 0.2em;
+    margin-top: 0.5em;
+}
 /* ---------- Segunda seccion -------------*/
 .doc {
     text-align: center;
