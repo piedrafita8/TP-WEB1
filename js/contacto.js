@@ -25,7 +25,7 @@ formulario.addEventListener("submit", (e) => {
 consulta.addEventListener("keyup", () => {
     contador = consulta.value.length;
     console.log(contador);
-    if (contador <= 1000) {
+    if (contador <= maximo) {
         limite.innerHTML = (maximo - contador) + "/" + maximo;
     } else {
         consulta.value = consulta.value.substring(0, 1000); /*para esta linea esta linea hubo que googlear pa que mentir */
