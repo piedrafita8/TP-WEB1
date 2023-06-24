@@ -12,8 +12,25 @@ let uni11=document.getElementById("unidad1.1");
 // uni2
 let uni2=document.getElementById("unidad2");
 let uni22=document.getElementById("unidad2.2");
+//Ver detalles de la descripcion del curso
+let detalles=document.getElementById("detalles");
+let verDesc=document.getElementById("verDesc");
 
 //funciones
+
+//ver detalles de la descripcion curso
+detalles.addEventListener("click",()=>{
+    verDesc.classList.toggle("d-none");
+    if(detalles.textContent=="Ver Detalles"){
+        detalles.innerHTML="Ocultar Detalles";
+    }else{
+        detalles.innerHTML="Ver Detalles";
+    }
+    
+})
+
+
+
 
 //mostrar ocultar unidades
 mostrar_ocultar.addEventListener("click",function(){
@@ -25,7 +42,6 @@ mostrar_ocultar.addEventListener("click",function(){
             mostrar_ocultar.value="ver mas";
         }
 });
-
 
 //mostrar ocultar unidades0
 uni0.addEventListener("click",function(){

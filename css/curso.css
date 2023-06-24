@@ -13,21 +13,26 @@
     justify-content: space-around;
     */
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     height: auto;
     margin-bottom: 1em;
 }
-
+.contjpg{
+    height: fit-content;
+    position: relative;
+    margin: 0px auto;
+}
 .cursojpg {
     /*display: flex;
     width: 40.3%;
     */
     justify-content: center;
-    position: relative;
+
 }
 
 
 .precio-curso {
+    /*
     background-color: rgba(0, 0, 0, 0.394);
     background-image: url(../img/curso/20usdw.png);
     background-size: contain;
@@ -39,12 +44,21 @@
     background-position: center;
     bottom: 0.3em;
     right: 1em;
-    border-radius: 10%;
+    border-radius: 10%;*/
+    position: absolute;
+    bottom: 0.6em;
+    right: 0.6em;
+    padding: 0.25em;
+    border-radius: 0.25em;
+    font-weight: bold;
+    font-size: 100%;
+    background-color: var(--color-secundario);
 }
-
 .cursojpg img {
+
     width: 100%;
-    border-radius: 5%;
+    height: fit-content;
+    border-radius: 0.5em;
 }
 
 h2 {
@@ -66,7 +80,10 @@ h3 {
 .cursodesc p {
     margin-bottom: 1%;
 }
-
+#detalles{
+    margin:0.3em;
+    color:var(--beige)
+}
 .insc {
     position: relative;
     width: 100%;
@@ -98,9 +115,10 @@ h3 {
 }
 
 /* ----------Segundo Article -------------*/
-.m-b{
+.m-b {
     margin-bottom: 2em;
 }
+
 .centrado {
     text-align: center;
     background-image: url(../img/d5.png);
@@ -199,9 +217,10 @@ aside {
 .otrosCursos {
     /*
     width: calc(25% - 1em);
+    */
     text-align: center;
     position: relative;
-    */
+    
 }
 
 .otrosCursos img {
@@ -215,15 +234,23 @@ aside {
 }
 
 .otroValor {
-    position: absolute;
+    /*position: absolute;
     max-width: fit-content;
     bottom: 0.4em;
     right: 0.2em;
     background-color: black;
     border-radius: 15%;
-    border: 1px var(--celeste) solid;
+    border: 1px var(--celeste) solid;*/
+    position: absolute;
+    bottom: 0.4em;
+    right: 0.2em;
+    padding: 0.25em;
+    border-radius: 0.25em;
+    font-weight: bold;
+    background-color: var(--color-secundario);
 }
-.as_t{
+
+.as_t {
     margin-bottom: 0.8em;
     border-bottom: 0.1em var(--celeste) solid;
 }
@@ -240,6 +267,7 @@ aside {
 
 /* -------------------- ESTILOS FOR TELEFONO ---------------------------- */
 @media screen and (max-width: 55em) {
+
     /*Primer Article*/
     .jpgdesc {
         flex-direction: column;
@@ -247,16 +275,19 @@ aside {
         height: auto;
         margin-bottom: 1em;
     }
-
+    .contjpg{
+        width: 90%;
+    }
     .cursojpg {
         display: flex;
-        width: 85%;
-        margin: 1em;
+        width: 100%;
+        /*margin: 1em;*/
     }
 
     .cursodesc {
-        margin: 1%;
-        width: 95%;
+        margin: 1em;
+        padding: 1em;
+        width: 90%;
     }
 
     /*Segundo Article*/
@@ -274,37 +305,42 @@ aside {
         flex-direction: column;
     }
 
-    .profedesc{
+    .profedesc {
         width: 80%;
     }
+
     .profedesc ul {
         display: flex;
         flex-direction: column;
 
     }
-    .alinearV{
+
+    .alinearV {
         display: flex;
         flex-direction: row;
         justify-content: start;
         flex-wrap: wrap;
         margin-left: 5%;
-        margin: 0 5% 1em 0 ;
+        margin: 0 5% 1em 0;
     }
+
     /* Otros cursos / Aside ------------*/
-    aside{
+    aside {
         flex-wrap: wrap;
     }
+
     .otrosCursos {
         width: calc(50% - 1em);
         text-align: center;
         position: relative;
     }
-    .otrosCursos img{
+
+    .otrosCursos img {
         width: 100%;
-        height:15em; 
+        height: 15em;
         /*con un carrusel creo puedo solucinar la incongruencia de h*/
     }
-    
+
 }
 
 
@@ -314,6 +350,7 @@ aside {
 
 /* ----------------------------- ESTILOS FOR ESCRITORIO------------------- */
 @media screen and (min-width: 55em) {
+
     /*Primer Article*/
     .jpgdesc {
         display: flex;
@@ -321,18 +358,24 @@ aside {
         justify-content: space-around;
         height: auto;
     }
-
+    .contjpg{
+        width: 40%;
+        padding: 0.5em
+    }
     .cursojpg {
         display: flex;
-        width: 40%;
+        justify-content: center;
+        width: 100%;
     }
 
     .cursodesc {
-        margin: 2%;
+        margin: 0.5em;
+        padding: 0.5em;
         width: 70%;
     }
+
     /*Segundo Article sin cambios ?*/
-    .contenido{
+    .contenido {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -351,6 +394,7 @@ aside {
     .profedesc {
         width: 60%;
     }
+
     .profedesc ul {
         display: flex;
         flex-direction: row;
@@ -362,8 +406,9 @@ aside {
         align-items: center;
         text-align: center;
     }
+
     /* Otros cursos / Aside ------------*/
-    
+
     .otrosCursos {
         width: calc(25% - 1em);
         text-align: center;
@@ -374,19 +419,21 @@ aside {
 
 /*JAVA SCRIPTS CLASS*/
 /*Java script class*/
-.d-none{
-    
+.d-none {
+
     display: none;
     transition: 1s;
 }
-.d-none{
+
+.d-none {
     transition: all 1s ease-in-out;
 }
-.unidades{
-    transition:0.9s;
+
+.unidades {
+    transition: 0.9s;
 }
 
-article a{
+article a {
     text-decoration: none;
     color: var(--celeste)
 }
