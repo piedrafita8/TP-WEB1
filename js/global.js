@@ -3,13 +3,20 @@ const allCursos = {
     1: "Photoshop",
     2: "E-commerce",
     3: "Desarrollo De Videojuegos",
-    4:"Fotografía",
+    4: "Fotografía",
     5: "CSS"
 }
+//espero usarlo posteriormente
 let mCursos = 6;
 let conta = 0;
 let cantCarrito = document.getElementById("cant-carrito");
 let compro = document.getElementsByName("compro");
+
+// para el mensaje de alerta
+let irA = document.getElementById("irA");
+let noIrA = document.getElementById("noIrA");
+let war = document.getElementById("warning");
+//
 
 console.log("Comenzamos Funciona?");
 /*sessionStorage.setItem("acc","0");*/
@@ -23,7 +30,7 @@ console.log("Comenzamos Funciona?");
         }
     });
 });*/
-/// No estaria funcionando
+/// No estaria funcionando lo de arriba
 
 
 sessionStorage.setItem("comp", "<p>Css</p><p>holi</p>");
@@ -44,11 +51,16 @@ compro.forEach(x => {
                 sessionStorage.setItem("compre",allCursos[i])
                 console.log(sessionStorage.getItem("compre"));*/
                 console.log("se ve algo ?");
-                alert("Desea ir a comprar o permanecer navegando?");
+                war.classList.add("supra")
+                war.classList.remove("d.none");
+                noIrA.addEventListener("click", () => {
+                    war.classList.add("d-none");
+                    war.classList.remove("supra");
+                    console.log("elimina la alerta?")
+                });
+                /*alert("Desea ir a comprar o permanecer navegando?");*/
             }
             i++;
         }
-
-
     });
 });
