@@ -143,3 +143,56 @@ main {
   width: 30px;
   margin-right: 5px;
 }
+
+/*Para el mensaje de alerta*/
+.d-none{
+  display: none;
+
+  z-index: 0;
+  transition: 1s;
+  opacity: 0;
+}
+.supra{
+  background-color: #34496693;
+  display:flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 2;
+  opacity: 1;
+}
+.supra svg{
+  filter:invert(50%);
+  height: 25%;
+  padding: 0.5em;
+}
+.alerta{
+  color: var(--celeste);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--color-fondo);
+  border: 0.2em solid black;
+  width: 50%;
+  height: 40%;
+  padding: 1%;
+  border-radius: 0.5em;
+}
+.btn-alert a{
+text-decoration: none;
+border: 0.1em solid var(--color-secundario);
+border-radius: 0.3em;
+padding: 0.5em;
+margin: 0.5em;
+}
+#irA{
+  color: green;
+}
+#noIrA{
+  color: var(--color-secundario);
+}
+/*Fin mensaje*/
