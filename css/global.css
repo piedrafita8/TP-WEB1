@@ -147,10 +147,7 @@ main {
 /*Para el mensaje de alerta*/
 .d-none{
   display: none;
-
-  z-index: 0;
   transition: 1s;
-  opacity: 0;
 }
 .supra{
   background-color: #34496693;
@@ -161,7 +158,7 @@ main {
   align-items: center;
   position: fixed;
   z-index: 2;
-  opacity: 1;
+  transition:1s;
 }
 .supra svg{
   filter:invert(50%);
@@ -181,6 +178,10 @@ main {
   height: 40%;
   padding: 1%;
   border-radius: 0.5em;
+  /**/
+  -webkit-box-shadow: 10px 10px 150px 15px rgba(0,188,250,0.6);
+-moz-box-shadow: 10px 10px 150px 15px rgba(0,188,250,0.6);
+box-shadow: 10px 10px 150px 15px rgba(0,188,250,0.6);
 }
 .btn-alert a{
 text-decoration: none;
@@ -195,4 +196,4 @@ margin: 0.5em;
 #noIrA{
   color: var(--color-secundario);
 }
-/*Fin mensaje*/
+/*Fin mensaje de alerta*/
