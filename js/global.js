@@ -8,7 +8,6 @@ const allCursos = {
 }
 //espero usarlo posteriormente
 let mCursos = 6;
-let conta = 0;
 let cantCarrito = document.getElementById("cant-carrito");
 let compro = document.getElementsByName("compro");
 
@@ -33,9 +32,8 @@ console.log("Comenzamos Funciona?");
 /// No estaria funcionando lo de arriba
 
 
-sessionStorage.setItem("comp", "<p>Css</p><p>holi</p>");
 console.log(sessionStorage.getItem("comp"));
-
+let conta = sessionStorage.getItem("acc");
 compro.forEach(x => {
     x.addEventListener("click", () => {
         let i = 0;
@@ -52,7 +50,7 @@ compro.forEach(x => {
                 console.log(sessionStorage.getItem("compre"));*/
                 console.log("se ve algo ?");
                 war.classList.add("supra")
-                war.classList.remove("d.none");
+                war.classList.remove("d-none");
                 noIrA.addEventListener("click", () => {
                     war.classList.add("d-none");
                     war.classList.remove("supra");
@@ -64,3 +62,7 @@ compro.forEach(x => {
         }
     });
 });
+if (conta != null && conta != 0) {
+    cantCarrito.innerHTML = sessionStorage.getItem("acc");
+}
+console.log("cantidad del carrito:" + sessionStorage.getItem("acc"));
