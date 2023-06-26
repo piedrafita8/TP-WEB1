@@ -86,7 +86,8 @@
   padding: 4px;
   border-radius: 4px;
   font-weight: bold;
-  background-color: var(--color-secundario);
+  background-color: var(--celeste);
+  color: var(--color-secundario);
 }
 
 .curso-info {
@@ -140,4 +141,45 @@
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+@media only screen and (max-width: 50em) {
+  .pasos {
+    flex-direction: column;
+    padding: 0px 50px;
+    gap: 40px;
+  }
+
+  .paso-item {
+    width: 90%;
+  }
+
+  .payment-box {
+    flex-direction: column;
+    gap: 0px;
+    padding: 20px 0px;
+    align-items: center;
+  }
+
+  .method {
+    text-align: center;
+  }
+
+  .method img {
+    width: 50%;
+  }
+
+  .cursos-grid {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slick-slide {
+    height: 50vh;
+    width: 100%;
+  }
+
+  .pasos {
+    margin: 25px 0px;
+  }
 }
