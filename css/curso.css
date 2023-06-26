@@ -228,6 +228,7 @@ aside {
     */
     text-align: center;
     position: relative;
+    margin: 0 0.5em;
     
 }
 
@@ -262,8 +263,10 @@ aside {
     margin-bottom: 0.8em;
     border-bottom: 0.1em var(--celeste) solid;
 }
-
-
+.responsive{
+    width: 95%;
+    margin: auto;
+}
 
 
 
