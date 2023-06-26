@@ -6,6 +6,9 @@ let limite = document.getElementById("limite");
 //PARA EL TEXTAREA Y SU CONTADOR DE CARACTERES
 let contador = 0;
 let maximo = 1000;
+//ehhh.... envio exitoso?
+let volver = document.getElementById("volver");
+let pop = document.getElementById("warning");
 
 
 //EXPRESIONES REGULARES PARA EL FORM
@@ -19,7 +22,10 @@ formulario.addEventListener("submit", (e) => {
     e.preventDefault();
     console.log("formulario deteneido");
     validar();
+    
 });
+//ehhh.... envio exitoso?
+
 
 //CANTIDAD DE CARACTERES DEL TEXTAREA
 consulta.addEventListener("keyup", () => {
@@ -73,12 +79,20 @@ function validar() {
     }
 
 
-
-
     if (error) {
         //mensaje de errror
         mError.innerHTML = mensajesError;
     } else {
-        form.submit(); //enviado
+        pop.classList.add("supra")
+        pop.classList.remove("d-none");
+        volver.addEventListener("click", () => {
+            pop.classList.add("d-none");
+            pop.classList.remove("supra");
+            
+            form.submit(); //enviado
+            alert("enviado!");
+            
+        });
+        
     }
 };
