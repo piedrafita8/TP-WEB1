@@ -1,95 +1,95 @@
 .contenedor {
-    margin: auto auto;
-    width: 95%;
-    max-width: 88em;
+  margin: auto auto;
+  width: 95%;
+  max-width: 88em;
 }
 .cursos {
-    margin: 2.5em 0;
+  margin: 2.5em 0;
 }
 
 .cursos h2 {
-    width: fit-content;
-    margin: 1em auto;
+  width: fit-content;
+  margin: 1em auto;
 }
 
 .cursos-grid {
-    margin: auto;
-    width: fit-content;
-    margin-bottom: 3em;
+  margin: auto;
+  width: fit-content;
+  margin-bottom: 3em;
 }
 
 .curso {
-    border: 1px solid var(--celeste);
-    padding: 1em;
-    width: calc(25%-1em);
+  border: 1px solid var(--celeste);
+  padding: 1em;
+  width: calc(25%-1em);
 }
 
 .curso-img {
-    position: relative;
+  position: relative;
 }
 
 .curso-img img {
-    width: 100%;
-    height: 15.6em;
-    object-fit: fill;
+  width: 100%;
+  height: 15.6em;
+  object-fit: fill;
 }
 
 .curso-img span {
-    position: absolute;
-    top: 0.25em;
-    left: 0.25em;
-    padding: 0.25em;
-    border-radius: 0.25em;
-    font-weight: bold;
-    background-color: var(--color-secundario);
+  position: absolute;
+  top: 0.25em;
+  left: 0.25em;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  font-weight: bold;
+  background-color: var(--color-secundario);
 }
 
 .curso-info {
-    display: flex;
-    justify-content: space-between;
-    font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
 }
 
 .curso-info h3 {
-    font-size: 32px;
-    text-align: end;
+  font-size: 32px;
+  text-align: end;
 }
 
 .curso-right {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .curso-btn {
-    display: block;
-    background-color: transparent;
-    border: none;
-    color: var(--celeste);
-    cursor: pointer;
-    text-align: end;
+  display: block;
+  background-color: transparent;
+  border: none;
+  color: var(--celeste);
+  cursor: pointer;
+  text-align: end;
 }
 
 .curso-btn:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .curso-btn a {
-    text-decoration: none;
-    color: var(--celeste);
+  text-decoration: none;
+  color: var(--celeste);
 }
-.curso-btn p{
-    font-size: 1.5em;
-    font-weight: 400;
+.curso-btn p {
+  font-size: 1.5em;
+  font-weight: 400;
 }
 .cursos-grid {
-    display: grid;
-    grid-auto-rows: calc(10%-1em);
-    grid-template-columns: repeat(auto-fit, minmax(20em,1fr));
-    grid-gap:1.5em;
-    width: 100%;
-    /*grid-template-columns: repeat(3, 1fr);*/
-    /*grid-gap: 1.9em;*/
-    /*margin: auto;*/
+  display: grid;
+  grid-auto-rows: calc(10%-1em);
+  grid-template-columns: repeat(auto-fit, minmax(20em, 1fr));
+  grid-gap: 1.5em;
+  width: 100%;
+  /*grid-template-columns: repeat(3, 1fr);*/
+  /*grid-gap: 1.9em;*/
+  /*margin: auto;*/
 }
 /*
 .cursos-grid {
@@ -101,6 +101,12 @@
 }*/
 
 /*--------- RESPONISVE FOR CELULARES*/
+
+@media screen and (max-width: 55em) {
+  main {
+    padding-top: 150px;
+  }
+}
 
 /*@media screen and (max-width: 55em){
     .cursos-grid {

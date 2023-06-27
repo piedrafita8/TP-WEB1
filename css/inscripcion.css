@@ -1,263 +1,283 @@
-    /*Para PC y Celular*/
+/*Para PC y Celular*/
 
-    .inscripcionContainer{
-        margin: auto auto;
-        max-width: 87.5em;
-    }
-    
-    .inscripcionContainer h2{
-        margin: 1em 0em;
-        font-size: 2em;
-        text-align: center;
-    }
-    
-    .inscripcionContainer h3{
-        font-size: 1.75em;
-        text-align: center;
-    }
+.inscripcionContainer {
+  margin: auto auto;
+  max-width: 87.5em;
+}
 
-    .inscripcion-grid{
-        display: grid;
-        grid-template-columns: 100%;
-        align-items: center;
-    }
+.inscripcionContainer h2 {
+  margin: 1em 0em;
+  font-size: 2em;
+  text-align: center;
+}
 
-    .inscripcion-divisor{
-        border-top: 0.125em dashed var(--color-secundario);
-    }
+.inscripcionContainer h3 {
+  font-size: 1.75em;
+  text-align: center;
+}
 
-    .inscripcionMensaje{
-        display: none; 
-        position: fixed;
-        z-index: 1; 
-        left: 0;
-        top: 0;
-        width: 100%; 
-        height: 100%; 
-        overflow: auto; 
-        background-color: rgb(0,0,0); 
-        background-color: rgba(0,0,0,0.4); 
-        -webkit-animation-name: fadeIn; 
-        -webkit-animation-duration: 0.4s;
-        animation-name: fadeIn;
-        animation-duration: 0.4s
-    }
+.inscripcion-grid {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+}
 
-    .inscripcionMensaje-contenido{
-        position: fixed;
-        bottom: 0;
-        background-color: white;
-        width: 100%;
-        -webkit-animation-name: slideIn;
-        -webkit-animation-duration: 0.4s;
-        animation-name: slideIn;
-        animation-duration: 0.4s;
-        
-    }
+.inscripcion-divisor {
+  border-top: 0.125em dashed var(--color-secundario);
+}
 
-    .inscripcionMensaje-cerrar{
-        color: var(--color-secundario);
-        float: right;
-        font-size: 2em;
-        font-weight: bold;
-    }
+.inscripcionMensaje {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  -webkit-animation-name: fadeIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s;
+}
 
-    .inscripcionMensaje-cerrar:hover,
-    .inscripcionMensaje-cerrar:focus {
-      color: #000;
-      text-decoration: none;
-      cursor: pointer;
-    }
+.inscripcionMensaje-contenido {
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s;
+}
 
-    .inscripcionMensaje-header{
-        padding: 1em 2em;
-        background-color: var(--celeste);
-        color: var(--color-secundario);
-    }
+.inscripcionMensaje-cerrar {
+  color: var(--color-secundario);
+  float: right;
+  font-size: 2em;
+  font-weight: bold;
+}
 
-    .inscripcionMensaje-body{
-        padding: 1em;
-    }
+.inscripcionMensaje-cerrar:hover,
+.inscripcionMensaje-cerrar:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
 
-    .inscripcionMensaje-body p{
-        white-space: pre-line;
-    }
+.inscripcionMensaje-header {
+  padding: 1em 2em;
+  background-color: var(--celeste);
+  color: var(--color-secundario);
+}
 
-    @-webkit-keyframes slideIn {
-        from {bottom: -300px; opacity: 0} 
-        to {bottom: 0; opacity: 1}
-      }
-      
-      @keyframes slideIn {
-        from {bottom: -300px; opacity: 0}
-        to {bottom: 0; opacity: 1}
-      }
-      
-      @-webkit-keyframes fadeIn {
-        from {opacity: 0} 
-        to {opacity: 1}
-      }
-      
-      @keyframes fadeIn {
-        from {opacity: 0} 
-        to {opacity: 1}
-      }
+.inscripcionMensaje-body {
+  padding: 1em;
+}
 
-    /*Para celulares*/
-    @media only screen and (max-width: 50em) {
+.inscripcionMensaje-body p {
+  white-space: pre-line;
+}
 
-        .inscripcion-persona{
-            display: grid;
-            grid-template-columns: 60% 30%;
-            align-items: center;
-        }
+@-webkit-keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
 
-        .inscripcion-item{
-            padding: 0.5em 1em;
-            text-align: center;
-        }
-    
-        .inscripcion-item input[type=text], input[type=number], input[type=email], input[type=tel]{
-            padding: 0.333em 0.333em;
-            width: 75%;
-            font-size: 1.25em;
-        }
-    
-    
-        .inscripcion-item input[type=text],input[type=number], input[type=email], input[type=tel]:focus{
-            outline: none;
-        }
-    
+@keyframes slideIn {
+  from {
+    bottom: -300px;
+    opacity: 0;
+  }
+  to {
+    bottom: 0;
+    opacity: 1;
+  }
+}
 
-        .inscripcion-addrow{
-            padding: 0.5em 0.5em;
-            text-align: center;
-            grid-column-start: 2;
-            grid-row-start: 1;
-            grid-row-end: 5;
-        }
-    
-        .inscripcion-decision{
-            padding: 0.5em 1em;
-            text-align: center;
-        }
-    
-    
-        .inscripcionButton-addrow{
-            background-color: var(--celeste);
-            border: none;
-            color: var(--color-fondo);
-            padding: 0.5em 1em;
-            margin: 1em 0em;
-            text-align: center;
-            font-size: 1.25em;
-            border-radius: 0.75em;
-            transition-duration: 0.4s;
-        }
-    
-        .inscripcionButton-addrow:hover{
-            background-color: var(--color-secundario);
-            color: var(--celeste);
-          }
-    
-    
-    
-        .inscripcionButton-decision{
-            background-color: var(--celeste);
-            border: none;
-            color: var(--color-fondo);
-            padding: 0.875em 5em;
-            margin: 0.25em;
-            text-align: center;
-            font-weight: bold;;
-            font-size: 1.25em;
-            border-radius: 0.75em;
-            transition-duration: 0.4s;
-        }
-    
-        .inscripcionButton-decision:hover{
-            background-color: var(--color-secundario);
-            color: var(--celeste);
-        }
-    }
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
-    /*Para PC */
-    @media only screen and (min-width: 50em) {
+/*Para celulares*/
+@media only screen and (max-width: 50em) {
+  main {
+    padding-top: 150px;
+  }
 
-        .inscripcion-persona{
-            display: grid;
-            grid-template-columns: 18% 18% 18% 18% 18% 10%;
-            align-items: center;
-        }
-    
-        .inscripcion-item{
-            padding: 0.5em 1em;
-            text-align: center;
-        }
-    
-        .inscripcion-item input[type=text], input[type=number], input[type=email], input[type=tel]{
-            padding: 0.75em 0.5em;
-            width: 85%;
-            font-size: 1em;
-        }
-    
-    
-        .inscripcion-item input[type=text], input[type=number], input[type=email], input[type=tel]:focus{
-            outline: none;
-        }
-    
+  .inscripcion-persona {
+    display: grid;
+    grid-template-columns: 60% 30%;
+    align-items: center;
+  }
 
-        .inscripcion-addrow{
-            padding: 0.5em 1em;
-            text-align: center;
-            grid-column: 6;
-        }
-    
-        .inscripcion-decision{
-            padding: 0.5em 1em;
-            text-align: center;
-        }
-    
-    
-        .inscripcionButton-addrow{
-            background-color: var(--celeste);
-            border: none;
-            color: var(--color-fondo);
-            padding: 0.75em 1.5em;
-            margin: 0.25em;
-            text-align: center;
-            font-size: 0.75em;
-            border-radius: 0.75em;
-            transition-duration: 0.4s;
-            cursor: pointer;
-            
-        }
-    
-        .inscripcionButton-addrow:hover{
-            background-color: var(--color-secundario);
-            color: var(--celeste);
-          }
-    
-    
-    
-        .inscripcionButton-decision{
-            background-color: var(--celeste);
-            border: none;
-            color: var(--color-fondo);
-            padding: 0.875em 5em;
-            margin: 0.25em;
-            text-align: center;
-            font-weight: bold;;
-            font-size: 1.25em;
-            border-radius: 0.75em;
-            transition-duration: 0.4s;
-            cursor: pointer;
-        }
-    
-        .inscripcionButton-decision:hover{
-            background-color: var(--color-secundario);
-            color: var(--celeste);
-        }
-    
-    }
+  .inscripcion-item {
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+
+  .inscripcion-item input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0.333em 0.333em;
+    width: 75%;
+    font-size: 1.25em;
+  }
+
+  .inscripcion-item input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"]:focus {
+    outline: none;
+  }
+
+  .inscripcion-addrow {
+    padding: 0.5em 0.5em;
+    text-align: center;
+    grid-column-start: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+  }
+
+  .inscripcion-decision {
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+
+  .inscripcionButton-addrow {
+    background-color: var(--celeste);
+    border: none;
+    color: var(--color-fondo);
+    padding: 0.5em 1em;
+    margin: 1em 0em;
+    text-align: center;
+    font-size: 1.25em;
+    border-radius: 0.75em;
+    transition-duration: 0.4s;
+  }
+
+  .inscripcionButton-addrow:hover {
+    background-color: var(--color-secundario);
+    color: var(--celeste);
+  }
+
+  .inscripcionButton-decision {
+    background-color: var(--celeste);
+    border: none;
+    color: var(--color-fondo);
+    padding: 0.875em 5em;
+    margin: 0.25em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    border-radius: 0.75em;
+    transition-duration: 0.4s;
+  }
+
+  .inscripcionButton-decision:hover {
+    background-color: var(--color-secundario);
+    color: var(--celeste);
+  }
+}
+
+/*Para PC */
+@media only screen and (min-width: 50em) {
+  .inscripcion-persona {
+    display: grid;
+    grid-template-columns: 18% 18% 18% 18% 18% 10%;
+    align-items: center;
+  }
+
+  .inscripcion-item {
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+
+  .inscripcion-item input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"] {
+    padding: 0.75em 0.5em;
+    width: 85%;
+    font-size: 1em;
+  }
+
+  .inscripcion-item input[type="text"],
+  input[type="number"],
+  input[type="email"],
+  input[type="tel"]:focus {
+    outline: none;
+  }
+
+  .inscripcion-addrow {
+    padding: 0.5em 1em;
+    text-align: center;
+    grid-column: 6;
+  }
+
+  .inscripcion-decision {
+    padding: 0.5em 1em;
+    text-align: center;
+  }
+
+  .inscripcionButton-addrow {
+    background-color: var(--celeste);
+    border: none;
+    color: var(--color-fondo);
+    padding: 0.75em 1.5em;
+    margin: 0.25em;
+    text-align: center;
+    font-size: 0.75em;
+    border-radius: 0.75em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .inscripcionButton-addrow:hover {
+    background-color: var(--color-secundario);
+    color: var(--celeste);
+  }
+
+  .inscripcionButton-decision {
+    background-color: var(--celeste);
+    border: none;
+    color: var(--color-fondo);
+    padding: 0.875em 5em;
+    margin: 0.25em;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.25em;
+    border-radius: 0.75em;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .inscripcionButton-decision:hover {
+    background-color: var(--color-secundario);
+    color: var(--celeste);
+  }
+}

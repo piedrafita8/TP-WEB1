@@ -61,26 +61,81 @@ body {
   width: 100%;
 }
 
-.navbar {
+nav {
   width: 100%;
   padding: 5px 0px;
   background-color: #98d2eb;
 }
 
-.navbar ul {
+nav ul {
   display: flex;
   justify-content: space-evenly;
   gap: 20px;
   list-style-type: none;
 }
 
-.item a {
+nav ul li a {
   color: #0d1821;
   text-decoration: none;
 }
 
-.navbar a:hover {
+nav ul li a:hover {
   color: #344966;
+}
+
+.checkbtn img {
+  width: 20px;
+}
+
+.checkbtn {
+  justify-content: center;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media screen and (max-width: 55em) {
+  .header {
+    z-index: 999;
+    position: fixed;
+  }
+
+  .checkbtn {
+    display: flex;
+  }
+
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--color-fondo);
+    top: 155px;
+    left: -100%;
+    text-align: center;
+    display: block;
+    transition: all 0.5s;
+    z-index: 999;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+  }
+
+  nav ul li {
+    margin-bottom: 70px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+    color: var(--celeste);
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
 
 .carrito {

@@ -1,219 +1,245 @@
-  /*Para PC y Celular*/
+/*Para PC y Celular*/
 
-  .giftcardDemoMonto{
-    position: relative;
-    background-color:black;
-    color:white;
-    font-size: 1.875em;
-    width: 4.15em;
-    height: 1.31em;
-  }
+.giftcardDemoMonto {
+  position: relative;
+  background-color: black;
+  color: white;
+  font-size: 1.875em;
+  width: 4.15em;
+  height: 1.31em;
+}
 
-  .giftcardPreview{
-    margin: 1.875em;
-  }
+.giftcardPreview {
+  margin: 1.875em;
+}
 
-  .giftcardPreview h3{
-    text-align: center;
-  }
+.giftcardPreview h3 {
+  text-align: center;
+}
 
-  .giftcardDemo{
-    height: 18.75em;
-    width: 18.75em;
-    background-color: #555;
-  }
+.giftcardDemo {
+  height: 18.75em;
+  width: 18.75em;
+  background-color: #555;
+}
 
-  .giftcardDemoText{
-    position:relative;
-    top: 40%;
-    text-align: center;
-    text-shadow: -0.031em -0.031em #000, 0.031em 0.031em #000, -0.031em 0.031em #000, 0.031em -0.031em #000
-  }
+.giftcardDemoText {
+  position: relative;
+  top: 40%;
+  text-align: center;
+  text-shadow: -0.031em -0.031em #000, 0.031em 0.031em #000,
+    -0.031em 0.031em #000, 0.031em -0.031em #000;
+}
 
-  .giftcardFormInputDestinatario{
-    background-image: url('../img/icons/user.svg');
-    background-position: 0.313em;
-    background-size: 0.938em;
-    background-repeat: no-repeat;
-  }
+.giftcardFormInputDestinatario {
+  background-image: url("../img/icons/user.svg");
+  background-position: 0.313em;
+  background-size: 0.938em;
+  background-repeat: no-repeat;
+}
 
-  .giftcardFormInputMonto{
-    background-image: url('../img/icons/money.svg');
-    background-position: 0.313em;
-    background-size: 0.938em;
-    background-repeat: no-repeat;
-  }
+.giftcardFormInputMonto {
+  background-image: url("../img/icons/money.svg");
+  background-position: 0.313em;
+  background-size: 0.938em;
+  background-repeat: no-repeat;
+}
 
-  .giftcardFormSelectColor{
-    width: 5.313em;
-    display: inline-block;
-    margin: 0.625em;
-  }
+.giftcardFormSelectColor {
+  width: 5.313em;
+  display: inline-block;
+  margin: 0.625em;
+}
 
-  .giftcardFormSelectColor input{
-    width: 1.25em;
-    display: block;
-    margin: 0.5em auto;
-  }
+.giftcardFormSelectColor input {
+  width: 1.25em;
+  display: block;
+  margin: 0.5em auto;
+}
 
-  .giftcardFormSelectFuente{
-    width: auto;
-    display: inline-block;
-    margin: 0.625em;
-  }
+.giftcardFormSelectFuente {
+  width: auto;
+  display: inline-block;
+  margin: 0.625em;
+}
 
-  
-  .giftcardFormSelectFuente input{
-    width: 1.25em;
-    display: block;
-    margin: 0em auto;
-  }
+.giftcardFormSelectFuente input {
+  width: 1.25em;
+  display: block;
+  margin: 0em auto;
+}
 
-  .giftcardFormSelectFuente label{
-    display:block;
-    width: fit-content;
-    text-align: center;
-  }
+.giftcardFormSelectFuente label {
+  display: block;
+  width: fit-content;
+  text-align: center;
+}
 
-  .giftcardFormSelectUbicacion{
-    width: 5.313em;
-    display: inline-block;
-    margin: 0.625em;
-  }
+.giftcardFormSelectUbicacion {
+  width: 5.313em;
+  display: inline-block;
+  margin: 0.625em;
+}
 
-  .giftcardFormSelectUbicacion input{
-    width: 1.25em;
-    display: block;
-    margin: 0.5em auto;
-  }
+.giftcardFormSelectUbicacion input {
+  width: 1.25em;
+  display: block;
+  margin: 0.5em auto;
+}
 
-  .giftcardFormSelectFondo{
-    width: 7.813em;
-    display: inline-block;
-    margin: 0.625em;
-  }
+.giftcardFormSelectFondo {
+  width: 7.813em;
+  display: inline-block;
+  margin: 0.625em;
+}
 
-  .giftcardFormSelectFondo input{
-    width: 1.25em;
-    display: block;
-    margin: 0.5em auto;
-  }
+.giftcardFormSelectFondo input {
+  width: 1.25em;
+  display: block;
+  margin: 0.5em auto;
+}
 
-  .giftcardColor{
-    height: 5.313em;
-    width: 5.313em;
-    border-radius: 50%;
-    background-color: #555;
-  }
+.giftcardColor {
+  height: 5.313em;
+  width: 5.313em;
+  border-radius: 50%;
+  background-color: #555;
+}
 
-  .imagePosicion{
-    width: 5.313em;
-    height: 5.313em;
-    display:block;
-  }
+.imagePosicion {
+  width: 5.313em;
+  height: 5.313em;
+  display: block;
+}
 
-  .giftcardColorSelect1{
-    background-color: rgba(255, 255, 255, 0.8);
-  }
+.giftcardColorSelect1 {
+  background-color: rgba(255, 255, 255, 0.8);
+}
 
-  .giftcardColorSelect2{
-    background-color: rgba(255, 0, 0, 0.8);
-  }
+.giftcardColorSelect2 {
+  background-color: rgba(255, 0, 0, 0.8);
+}
 
-  .giftcardColorSelect3{
-    background-color: rgba(0, 128, 0, 0.8);
-  }
+.giftcardColorSelect3 {
+  background-color: rgba(0, 128, 0, 0.8);
+}
 
-  .giftcardColorSelect4{
-    background-color: rgba(0, 0, 255, 0.8);
-  }
+.giftcardColorSelect4 {
+  background-color: rgba(0, 0, 255, 0.8);
+}
 
-  .giftcardColorSelect5{
-    background-color: rgba(255, 255, 0, 0.8);
-  }
+.giftcardColorSelect5 {
+  background-color: rgba(255, 255, 0, 0.8);
+}
 
-  .giftcardColorText1{
-    color: rgba(255, 255, 255, 0.8);
-  }
+.giftcardColorText1 {
+  color: rgba(255, 255, 255, 0.8);
+}
 
-  .giftcardColorText2{
-    color: rgba(255, 0, 0, 0.8);
-  }
+.giftcardColorText2 {
+  color: rgba(255, 0, 0, 0.8);
+}
 
-  .giftcardColorText3{
-    color: rgba(0, 128, 0, 0.8);
-  }
+.giftcardColorText3 {
+  color: rgba(0, 128, 0, 0.8);
+}
 
-  .giftcardColorText4{
-    color: rgba(0, 0, 255, 0.8);
-  }
+.giftcardColorText4 {
+  color: rgba(0, 0, 255, 0.8);
+}
 
-  .giftcardColorText5{
-    color: rgba(255, 255, 0, 0.8);
-  }
+.giftcardColorText5 {
+  color: rgba(255, 255, 0, 0.8);
+}
 
-  .giftcardText1{
-    font-size: 1.25em;
-    font-weight: bold;
-  }
+.giftcardText1 {
+  font-size: 1.25em;
+  font-weight: bold;
+}
 
-  .giftcardText2{
-    font-size: 1.75em;
-    font-weight: bold;
-  }
+.giftcardText2 {
+  font-size: 1.75em;
+  font-weight: bold;
+}
 
-  .giftcardText3{
-    font-size: 2em;
-    font-weight: bold;
-  }
+.giftcardText3 {
+  font-size: 2em;
+  font-weight: bold;
+}
 
-  .giftcardText4{
-    font-size: 3em;
-    font-weight: bold;
-  }
+.giftcardText4 {
+  font-size: 3em;
+  font-weight: bold;
+}
 
-  .giftcardText5{
-    font-size: 3.75em;
-    font-weight: bold;
-  }
+.giftcardText5 {
+  font-size: 3.75em;
+  font-weight: bold;
+}
 
-  .giftcardFondo1{
-    background: rgb(0,10,80);
-    background: linear-gradient(45deg, rgba(0,10,80,1) 0%, rgba(0,100,255,1) 50%, rgba(0,10,80,1) 100%);
-  }
+.giftcardFondo1 {
+  background: rgb(0, 10, 80);
+  background: linear-gradient(
+    45deg,
+    rgba(0, 10, 80, 1) 0%,
+    rgba(0, 100, 255, 1) 50%,
+    rgba(0, 10, 80, 1) 100%
+  );
+}
 
-  .giftcardFondo2{
-    background: rgb(80,0,10);
-    background: linear-gradient(45deg, rgba(80,0,10,1) 0%, rgba(255,0,80,1) 50%, rgba(80,0,10,1) 100%);
-  }
+.giftcardFondo2 {
+  background: rgb(80, 0, 10);
+  background: linear-gradient(
+    45deg,
+    rgba(80, 0, 10, 1) 0%,
+    rgba(255, 0, 80, 1) 50%,
+    rgba(80, 0, 10, 1) 100%
+  );
+}
 
-  .giftcardFondo3{
-    background: rgb(10,80,0);
-    background: linear-gradient(45deg, rgba(10,80,0,1) 0%, rgba(80,255,0,1) 50%, rgba(10,80,0,1) 100%);
-  }
+.giftcardFondo3 {
+  background: rgb(10, 80, 0);
+  background: linear-gradient(
+    45deg,
+    rgba(10, 80, 0, 1) 0%,
+    rgba(80, 255, 0, 1) 50%,
+    rgba(10, 80, 0, 1) 100%
+  );
+}
 
-  .giftcardFondo4{
-    background: rgb(80,80,10);
-    background: linear-gradient(45deg, rgba(80,80,10,1) 0%, rgba(255,255,80,1) 50%, rgba(80,80,10,1) 100%);
-  }
+.giftcardFondo4 {
+  background: rgb(80, 80, 10);
+  background: linear-gradient(
+    45deg,
+    rgba(80, 80, 10, 1) 0%,
+    rgba(255, 255, 80, 1) 50%,
+    rgba(80, 80, 10, 1) 100%
+  );
+}
 
-  .giftcardFondo5{
-    background: rgb(80,10,80);
-    background: linear-gradient(45deg, rgba(80,10,80,1) 0%, rgba(255,80,255,1) 50%, rgba(80,10,80,1) 100%);
-  }
+.giftcardFondo5 {
+  background: rgb(80, 10, 80);
+  background: linear-gradient(
+    45deg,
+    rgba(80, 10, 80, 1) 0%,
+    rgba(255, 80, 255, 1) 50%,
+    rgba(80, 10, 80, 1) 100%
+  );
+}
 
-
-
-  /*Para celulares*/
+/*Para celulares*/
 @media only screen and (max-width: 50em) {
-  .giftCardSection{
-    display:flex;
+  main {
+    padding-top: 150px;
+  }
+
+  .giftCardSection {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-
-  .giftcardButton{
+  .giftcardButton {
     background-color: var(--celeste);
     border: none;
     color: var(--color-fondo);
@@ -224,12 +250,12 @@
     border-radius: 0.75em;
   }
 
-  .giftcardForm{
+  .giftcardForm {
     margin: 1.875em;
     width: 80%;
   }
 
-  .giftcardFormInput{
+  .giftcardFormInput {
     width: 75%;
     height: 2em;
     margin: 0.5em 0em;
@@ -238,52 +264,55 @@
     transition: width 0.4s ease-in-out;
   }
 
-  .giftcardFormInput:focus{
+  .giftcardFormInput:focus {
     width: 75%;
     outline: none;
   }
 
-  .giftcardFondo{
+  .giftcardFondo {
     height: 5.313em;
     width: 5.313em;
     background-color: #555;
   }
 
-  .giftcardFormSelectFondo{
+  .giftcardFondo1 {
+    position: relative;
+  }
+
+  .giftcardFormSelectFondo {
     width: 5.313em;
     display: inline-block;
     margin: 0.625em;
   }
 
-  .giftcardPos1{
+  .giftcardPos1 {
     position: absolute;
-    top: 53%;
-    left: 48%;
+    top: 87%;
+    left: 59%;
   }
 
-  .giftcardPos2{
+  .giftcardPos2 {
     position: absolute;
     top: 22.5%;
     left: 48%;
   }
 
-  .giftcardPos3{
+  .giftcardPos3 {
     position: absolute;
     top: 22.5%;
   }
 }
 
-  /*Para PC */
+/*Para PC */
 
 @media only screen and (min-width: 50em) {
-
-  .giftCardSection{
-    display:flex;
+  .giftCardSection {
+    display: flex;
     flex-direction: row;
     align-items: normal;
   }
 
-  .giftcardButton{
+  .giftcardButton {
     background-color: var(--celeste);
     border: none;
     color: var(--color-fondo);
@@ -296,17 +325,17 @@
     cursor: pointer;
   }
 
-  .giftcardButton:hover{
+  .giftcardButton:hover {
     background-color: var(--color-secundario);
     color: var(--celeste);
   }
 
-  .giftcardForm{
+  .giftcardForm {
     margin: 1.875em;
     width: 100%;
   }
 
-  .giftcardFormInput{
+  .giftcardFormInput {
     width: 15%;
     height: 2em;
     margin: 0.5em 0em;
@@ -315,36 +344,36 @@
     transition: width 0.4s ease-in-out;
   }
 
-  .giftcardFormInput:focus{
+  .giftcardFormInput:focus {
     width: 40%;
     outline: none;
   }
 
-  .giftcardFondo{
+  .giftcardFondo {
     height: 7.813em;
     width: 7.813em;
     background-color: #555;
   }
 
-  .giftcardFormSelectFondo{
+  .giftcardFormSelectFondo {
     width: 7.813em;
     display: inline-block;
     margin: 0.625em;
   }
-  
-  .giftcardPos1{
+
+  .giftcardPos1 {
     position: absolute;
     top: 15.1em;
     left: 6.85em;
   }
 
-  .giftcardPos2{
+  .giftcardPos2 {
     position: absolute;
     top: 6.35em;
     left: 6.85em;
   }
 
-  .giftcardPos3{
+  .giftcardPos3 {
     position: absolute;
     top: 6.35em;
     left: 1em;
