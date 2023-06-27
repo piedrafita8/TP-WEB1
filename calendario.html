@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/calendario.css" />
     <title>Calendario</title>
   </head>
   <body>
@@ -56,6 +57,13 @@
         </nav>
       </div>
     </header>
+
+    <main>
+      <section class="contenedor-calendario">
+        <article id="calendar"></article>
+      </section>
+    </main>
+
     <footer class="footer">
       <div class="datos-personales">
         <p>Santiago Piedrafita</p>
@@ -85,5 +93,8 @@
         </a>
       </div>
     </footer>
-  </body>
+
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js'></script>
+    <script src="js/calendario.js"></script>
+    
 </html>
