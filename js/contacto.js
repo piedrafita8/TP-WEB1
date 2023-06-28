@@ -32,7 +32,7 @@ consulta.addEventListener("keyup", () => {
     consulta.value = consulta.value.substring(0, 1000);
   }
 });
-
+// PARA VALIDAR FORMULARIO
 function validar() {
   let error = false;
   let mensajesError = "";
@@ -66,13 +66,13 @@ function validar() {
     mError.innerHTML = mensajesError;
   } else {
     pop.classList.add("supra");
-    pop.classList.remove("d-none");
+    pop.classList.remove("d-hidde");
     volver.addEventListener("click", () => {
-      pop.classList.add("d-none");
+      pop.classList.add("d-hidde");
       pop.classList.remove("supra");
 
       form.submit();
-      alert("enviado!");
+      /*alert("enviado!");//PARA COMPROBAR SI SE ENVIO*/
     });
   }
 }

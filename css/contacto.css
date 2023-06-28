@@ -88,8 +88,6 @@ h2 {
   height: 100%;
   justify-content: space-around;
 }
-.datEmp p {
-}
 .datEmp h3 {
   font-size: 1.4em;
 }
@@ -161,9 +159,6 @@ aside h3 {
     display: flex;
     flex-direction: column;
   }
-  .datEmp {
-  }
-
   .datEmp {
     align-items: center;
     margin: 1em;

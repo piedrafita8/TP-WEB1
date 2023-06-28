@@ -27,9 +27,9 @@ compro.forEach((x) => {
         sessionStorage.setItem("acc", conta);
         cantCarrito.innerHTML = sessionStorage.getItem("acc");
         war.classList.add("supra");
-        war.classList.remove("d-none");
+        war.classList.remove("d-hidde");
         noIrA.addEventListener("click", () => {
-          war.classList.add("d-none");
+          war.classList.add("d-hidde");
           war.classList.remove("supra");
         });
       }
