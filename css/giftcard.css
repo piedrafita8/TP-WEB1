@@ -293,13 +293,13 @@
 
   .giftcardPos2 {
     position: absolute;
-    top: 22.5%;
-    left: 48%;
+    top: 0;
+    right: 0;
   }
 
   .giftcardPos3 {
     position: absolute;
-    top: 22.5%;
+    top: 0;
   }
 }
 
@@ -369,13 +369,13 @@
 
   .giftcardPos2 {
     position: absolute;
-    top: 6.35em;
+    top: 6.2em;
     left: 6.85em;
   }
 
   .giftcardPos3 {
     position: absolute;
-    top: 6.35em;
+    top: 6.2em;
     left: 1em;
   }
 }

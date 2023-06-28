@@ -216,6 +216,9 @@ aside {
 
 /* -------------------- ESTILOS FOR TELEFONO ---------------------------- */
 @media screen and (max-width: 55em) {
+  .contenedor {
+    padding-top: 150px;
+  }
   /*Primer Article*/
   .jpgdesc {
     flex-direction: column;
