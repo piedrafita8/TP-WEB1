@@ -240,32 +240,39 @@ main {
 }
 .supra svg {
   filter: invert(50%);
-  height: 25%;
+  height:3em;
   padding: 0.5em;
+  min-height: 1em;
 }
 .alerta {
   color: var(--celeste);
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   background-color: var(--color-fondo);
   border: 0.2em solid black;
   width: 50%;
-  height: 40%;
+  height: fit-content;
   padding: 1%;
   border-radius: 0.5em;
   -webkit-box-shadow: 10px 10px 150px 15px rgba(0, 188, 250, 0.6);
   -moz-box-shadow: 10px 10px 150px 15px rgba(0, 188, 250, 0.6);
   box-shadow: 10px 10px 150px 15px rgba(0, 188, 250, 0.6);
 }
+.btn-alert{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .btn-alert a {
   text-decoration: none;
   border: 0.1em solid var(--color-secundario);
-  border-radius: 0.3em;
-  padding: 0.5em;
-  margin: 0.5em;
+  border-radius: 0.2em;
+  padding: 0.4em;
+  margin: 0.4em;
 }
 #irA {
   color: green;
