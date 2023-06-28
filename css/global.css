@@ -216,9 +216,15 @@ main {
 }
 
 /*Para el mensaje de alerta*/
-.d-none {
-  display: none;
-  transition: 1s;
+.d-hidde {
+  /*display: none;*/
+  /*Pruebo cositas*/
+  opacity: 0;
+  pointer-events: none;
+  position:fixed;
+  z-index: 3;
+  transition: 0s;
+  /* Fin de Prueba*/
 }
 .supra {
   background-color: #34496693;
@@ -229,7 +235,8 @@ main {
   align-items: center;
   position: fixed;
   z-index: 2;
-  transition: 1s;
+  opacity: 1;
+  transition: 0.6s;
 }
 .supra svg {
   filter: invert(50%);

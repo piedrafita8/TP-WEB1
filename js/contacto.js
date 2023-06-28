@@ -66,9 +66,9 @@ function validar() {
     mError.innerHTML = mensajesError;
   } else {
     pop.classList.add("supra");
-    pop.classList.remove("d-none");
+    pop.classList.remove("d-hidde");
     volver.addEventListener("click", () => {
-      pop.classList.add("d-none");
+      pop.classList.add("d-hidde");
       pop.classList.remove("supra");
 
       form.submit();
