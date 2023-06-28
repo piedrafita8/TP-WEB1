@@ -8,9 +8,6 @@ h2 {
 .contenedor {
   max-width: 88em;
   margin: auto;
-  /*
-  width: 95%;
-  */
 }
 
 /*----------- SECTION -----------*/
@@ -18,10 +15,6 @@ h2 {
 /* ------- PRIMER ARTICLE --------- */
 .datos {
   margin: 2em 0;
-  /*
-  display: flex;
-  justify-content: space-evenly;
-  */
 }
 
 .contacto {
@@ -87,8 +80,6 @@ h2 {
 .empresa {
   position: relative;
   height: auto;
-  /*border: 2px dotted var(--color-secundario);*/
-  /*se puede quitar el borde */
 }
 .datEmp {
   display: flex;
@@ -96,30 +87,12 @@ h2 {
   flex-direction: column;
   height: 100%;
   justify-content: space-around;
-  /*align-items: center;
-  margin: 1em;*/
 }
 .datEmp p {
-  /*margin-top: 2px;
-  font-weight: 600;*/
 }
 .datEmp h3 {
   font-size: 1.4em;
-  /*border-bottom: 2px solid var(--color-secundario);*/
 }
-
-/*.empresajpg { /*
-  position: absolute;
-  width: 100%;
-  height: 100%;
-
-
-  background-image: url(../img/logo.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  opacity: 0.5;
-}*/
 
 .empresajpg:hover {
   transition: 0.5s;
@@ -145,10 +118,6 @@ aside h3 {
     width: 95%;
   }
 
-  /*
-  .datos{
-    no lo utilizo ah
-  }*/
   .empresa {
     display: flex;
     flex-direction: column;
@@ -160,7 +129,6 @@ aside h3 {
     height: 100%;
   }
   .empresajpg {
-    /**/
     position: absolute;
     width: 100%;
     height: 100%;
@@ -194,19 +162,13 @@ aside h3 {
     flex-direction: column;
   }
   .datEmp {
-    /*no me permite separarlo con flex*/
   }
 
   .datEmp {
-    /*display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:space-around;*/
     align-items: center;
     margin: 1em;
   }
   .empresajpg {
-    /* fondo con logo*/
     position: absolute;
     width: 100%;
     height: 100%;

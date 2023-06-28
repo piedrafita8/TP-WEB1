@@ -1,450 +1,367 @@
 .contenedor {
-    margin: auto auto;
-    width: 95%;
-    max-width: 88em;
+  margin: auto auto;
+  width: 95%;
+  max-width: 88em;
 }
 
 /* ----Primera seccion----*/
 
 /*----------------- Primer Article --------*/
 .jpgdesc {
-    /*
-    flex-direction: row;
-    justify-content: space-around;
-    */
-    display: flex;
-    /*align-items: center;*/
-    height: auto;
-    margin-bottom: 1em;
+  display: flex;
+  height: auto;
+  margin-bottom: 1em;
 }
-.contjpg{
-    height: fit-content;
-    position: relative;
-    margin: 0px auto;
+.contjpg {
+  height: fit-content;
+  position: relative;
+  margin: 0px auto;
 }
 .cursojpg {
-    /*display: flex;
-    width: 40.3%;
-    */
-    justify-content: center;
-
+  justify-content: center;
 }
-
 
 .precio-curso {
-    /*
-    background-color: rgba(0, 0, 0, 0.394);
-    background-image: url(../img/curso/20usdw.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-
-    width: 27%;
-    height: 10%;
-    position: absolute;
-    background-position: center;
-    bottom: 0.3em;
-    right: 1em;
-    border-radius: 10%;*/
-    position: absolute;
-    bottom: 0.6em;
-    right: 0.6em;
-    padding: 0.25em;
-    border-radius: 0.25em;
-    font-weight: bold;
-    font-size: 100%;
-    background-color: var(--color-secundario);
+  position: absolute;
+  bottom: 0.6em;
+  right: 0.6em;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  font-weight: bold;
+  font-size: 100%;
+  background-color: var(--color-secundario);
 }
 .cursojpg img {
-
-    width: 100%;
-    height: fit-content;
-    border-radius: 0.5em;
+  width: 100%;
+  height: fit-content;
+  border-radius: 0.5em;
 }
 
 h2 {
-    text-align: center;
-    border-bottom: 2px solid var(--color-secundario);
-    margin-top: 1.1em;
-    margin: 1% 0;
+  text-align: center;
+  border-bottom: 2px solid var(--color-secundario);
+  margin-top: 1.1em;
+  margin: 1% 0;
 }
 
 h3 {
-    margin: 1em;
+  margin: 1em;
 }
 
 .cursodesc {
-    margin: 2%;
-    width: 70%;
+  margin: 2%;
+  width: 70%;
 }
 
 .cursodesc p {
-    margin-bottom: 1%;
+  margin-bottom: 1%;
 }
-#detalles{
-    margin:0.3em;
-    color:var(--beige)
+#detalles {
+  margin: 0.3em;
+  color: var(--beige);
 }
 .insc {
-    position: relative;
-    width: 100%;
-    height: 1em;
+  position: relative;
+  width: 100%;
+  height: 1em;
 }
 
 .insc a {
-    position: absolute;
-    right: 0.5em;
-    text-decoration: none;
-    margin: 0.2em;
-    padding: 0.4em;
-    border-radius: 10%;
-    color: var(--celeste);
-    font-size: 1.2em;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: var(--color-secundario);
-    opacity: 0.8;
-    transition: 0.5s;
+  position: absolute;
+  right: 0.5em;
+  text-decoration: none;
+  margin: 0.2em;
+  padding: 0.4em;
+  border-radius: 10%;
+  color: var(--celeste);
+  font-size: 1.2em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--color-secundario);
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
 .insc a:hover {
-    background-color: var(--beige);
-    color: var(--color-secundario);
+  background-color: var(--beige);
+  color: var(--color-secundario);
 }
 
 .unidades li {
-    list-style: none;
+  list-style: none;
 }
 
 /* ----------Segundo Article -------------*/
 .m-b {
-    margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 
 .centrado {
-    text-align: center;
-    background-image: url(../img/d5.png);
+  text-align: center;
+  background-image: url(../img/d5.png);
 }
 
 .contenido {
-    /*
-    display: flex;
-    align-items: center;
-    
-    */
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .iconu {
-    padding: 1px;
-    width: 1em;
-    margin-right: 0.4em;
-    /*border: 1px #00ff00 solid; --- usado en la lucha por darles un
-    tamaño adecuado---*/
-    filter: invert(90%);
+  padding: 1px;
+  width: 1em;
+  margin-right: 0.4em;
+  filter: invert(90%);
 }
-#cambiar{
-    font-style: none;
-    border-style: none;
-    width: 50%;
-    border-radius: 0.2em;
-    background-color: #98d2ebb6;
-    padding: 0.2em;
-    margin-top: 0.5em;
+#cambiar {
+  font-style: none;
+  border-style: none;
+  width: 50%;
+  border-radius: 0.2em;
+  background-color: #98d2ebb6;
+  padding: 0.2em;
+  margin-top: 0.5em;
 }
 /* ---------- Segunda seccion -------------*/
 .doc {
-    text-align: center;
-    padding: 5px;
-    background-color: var(--color-secundario);
+  text-align: center;
+  padding: 5px;
+  background-color: var(--color-secundario);
 }
 
 .docente {
-    min-height: 20%;
-    min-width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    /*
-    flex-direction: row;
-*/
+  min-height: 20%;
+  min-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .profe {
-    width: 30%;
-    margin: auto;
+  width: 30%;
+  margin: auto;
 }
 
 .profedesc {
-    margin: 0 auto auto auto;
+  margin: 0 auto auto auto;
 }
 
 .profedesc ul {
-    margin-top: 1.5em;
-    /*
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;*/
-    justify-content: space-around;
+  margin-top: 1.5em;
+  justify-content: space-around;
 }
 
 .profedesc li {
-    list-style: none;
-    /*
-    width: calc(33.3% - 2em);
-    */
+  list-style: none;
 }
 
 .profejpg {
-    max-width: 60%;
-    border-radius: 50%;
+  max-width: 60%;
+  border-radius: 50%;
 }
 
 .alinearC {
-
-    display: flex;
-    flex-direction: row;
-    width: auto;
-    align-items: center;
-
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  align-items: center;
 }
 
 .iconval {
-    padding: 1px;
-    width: 1em;
-    margin-right: 0.4em;
-    filter: invert(100%);
+  padding: 1px;
+  width: 1em;
+  margin-right: 0.4em;
+  filter: invert(100%);
 }
 
 /*------------ Otros cursos / Aside ------------*/
 aside {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 100%;
-    margin-bottom: 1%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 1%;
 }
 
 .otrosCursos {
-    /*
-    width: calc(25% - 1em);
-    */
-    text-align: center;
-    position: relative;
-    margin: 0 0.5em;
-    
+  text-align: center;
+  position: relative;
+  margin: 0 0.5em;
 }
 
 .otrosCursos img {
-    width: 100%;
-    height: 15em;
+  width: 100%;
+  height: 15em;
 }
 
 .otrosCursos a {
-    text-decoration: none;
-    color: var(--celeste);
+  text-decoration: none;
+  color: var(--celeste);
 }
 
 .otroValor {
-    /*position: absolute;
-    max-width: fit-content;
-    bottom: 0.4em;
-    right: 0.2em;
-    background-color: black;
-    border-radius: 15%;
-    border: 1px var(--celeste) solid;*/
-    position: absolute;
-    bottom: 0.4em;
-    right: 0.2em;
-    padding: 0.25em;
-    border-radius: 0.25em;
-    font-weight: bold;
-    background-color: var(--color-secundario);
+  position: absolute;
+  bottom: 0.4em;
+  right: 0.2em;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  font-weight: bold;
+  background-color: var(--color-secundario);
 }
 
 .as_t {
-    margin-bottom: 0.8em;
-    border-bottom: 0.1em var(--celeste) solid;
+  margin-bottom: 0.8em;
+  border-bottom: 0.1em var(--celeste) solid;
 }
-.responsive{
-    width: 95%;
-    margin: auto;
+.responsive {
+  width: 95%;
+  margin: auto;
 }
-
-
-
-
-
-
-
-
 
 /* -------------------- ESTILOS FOR TELEFONO ---------------------------- */
 @media screen and (max-width: 55em) {
+  /*Primer Article*/
+  .jpgdesc {
+    flex-direction: column;
 
-    /*Primer Article*/
-    .jpgdesc {
-        flex-direction: column;
+    height: auto;
+    margin-bottom: 1em;
+  }
+  .contjpg {
+    width: 90%;
+  }
+  .cursojpg {
+    display: flex;
+    width: 100%;
+  }
 
-        height: auto;
-        margin-bottom: 1em;
-    }
-    .contjpg{
-        width: 90%;
-    }
-    .cursojpg {
-        display: flex;
-        width: 100%;
-        /*margin: 1em;*/
-    }
+  .cursodesc {
+    margin: 1em;
+    padding: 1em;
+    width: 90%;
+  }
 
-    .cursodesc {
-        margin: 1em;
-        padding: 1em;
-        width: 90%;
-    }
+  /*Segundo Article*/
+  .contenido {
+    display: inline;
+    flex-direction: column;
+    align-items: start;
+  }
 
-    /*Segundo Article*/
-    .contenido {
-        display: inline;
-        flex-direction: column;
-        align-items: start;
-    }
+  /*Segunda Section---------------*/
+  .docente {
+    flex-direction: column;
+  }
 
-    /*Segunda Section---------------*/
-    .docente {
-        /*
-        display: flex;
-        flex-wrap: wrap;*/
-        flex-direction: column;
-    }
+  .profedesc {
+    width: 80%;
+  }
 
-    .profedesc {
-        width: 80%;
-    }
+  .profedesc ul {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .profedesc ul {
-        display: flex;
-        flex-direction: column;
+  .alinearV {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    margin: 0 5% 1em 0;
+  }
 
-    }
+  /* Otros cursos / Aside ------------*/
+  aside {
+    flex-wrap: wrap;
+  }
 
-    .alinearV {
-        display: flex;
-        flex-direction: row;
-        justify-content: start;
-        flex-wrap: wrap;
-        margin-left: 5%;
-        margin: 0 5% 1em 0;
-    }
+  .otrosCursos {
+    width: calc(50% - 1em);
+    text-align: center;
+    position: relative;
+  }
 
-    /* Otros cursos / Aside ------------*/
-    aside {
-        flex-wrap: wrap;
-    }
-
-    .otrosCursos {
-        width: calc(50% - 1em);
-        text-align: center;
-        position: relative;
-    }
-
-    .otrosCursos img {
-        width: 100%;
-        height: 15em;
-        /*con un carrusel creo puedo solucinar la incongruencia de h*/
-    }
-
+  .otrosCursos img {
+    width: 100%;
+    height: 15em;
+  }
 }
-
-
-
-
-
 
 /* ----------------------------- ESTILOS FOR ESCRITORIO------------------- */
 @media screen and (min-width: 55em) {
+  /*Primer Article*/
+  .jpgdesc {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: auto;
+  }
+  .contjpg {
+    width: 40%;
+    padding: 0.5em;
+  }
+  .cursojpg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
 
-    /*Primer Article*/
-    .jpgdesc {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        height: auto;
-    }
-    .contjpg{
-        width: 40%;
-        padding: 0.5em
-    }
-    .cursojpg {
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
+  .cursodesc {
+    margin: 0.5em;
+    padding: 0.5em;
+    width: 70%;
+  }
 
-    .cursodesc {
-        margin: 0.5em;
-        padding: 0.5em;
-        width: 70%;
-    }
+  /*Segundo Article sin cambios ?*/
+  .contenido {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 
-    /*Segundo Article sin cambios ?*/
-    .contenido {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
+  /*SEGUNDA SECTION ---------*/
+  .docente {
+    width: 100%;
+    flex-direction: row;
+  }
 
-    /*SEGUNDA SECTION ---------*/
-    .docente {
-        width: 100%;
-        /*
-        display: flex;
-        flex-wrap: wrap;
-        */
-        flex-direction: row;
-    }
+  .profedesc {
+    width: 60%;
+  }
 
-    .profedesc {
-        width: 60%;
-    }
+  .profedesc ul {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .profedesc ul {
-        display: flex;
-        flex-direction: row;
-    }
+  .alinearV {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
 
-    .alinearV {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-    }
+  /* Otros cursos / Aside ------------*/
 
-    /* Otros cursos / Aside ------------*/
-
-    .otrosCursos {
-        width: calc(25% - 1em);
-        text-align: center;
-        position: relative;
-    }
-
+  .otrosCursos {
+    width: calc(25% - 1em);
+    text-align: center;
+    position: relative;
+  }
 }
 
 /*JAVA SCRIPTS CLASS*/
-/*Java script class*/
 .d-none {
-
-    display: none;
-    transition: 1s;
+  display: none;
+  transition: 1s;
 }
 
 .d-none {
-    transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .unidades {
-    transition: 0.9s;
+  transition: 0.9s;
 }
 
 article a {
-    text-decoration: none;
-    color: var(--celeste)
+  text-decoration: none;
+  color: var(--celeste);
 }
