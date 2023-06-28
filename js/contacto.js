@@ -32,7 +32,7 @@ consulta.addEventListener("keyup", () => {
     consulta.value = consulta.value.substring(0, 1000);
   }
 });
-
+// PARA VALIDAR FORMULARIO
 function validar() {
   let error = false;
   let mensajesError = "";
@@ -72,7 +72,7 @@ function validar() {
       pop.classList.remove("supra");
 
       form.submit();
-      alert("enviado!");
+      /*alert("enviado!");//PARA COMPROBAR SI SE ENVIO*/
     });
   }
 }
