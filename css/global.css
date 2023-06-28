@@ -217,14 +217,11 @@ main {
 
 /*Para el mensaje de alerta*/
 .d-hidde {
-  /*display: none;*/
-  /*Pruebo cositas*/
   opacity: 0;
   pointer-events: none;
   position:fixed;
   z-index: 3;
   transition: 0s;
-  /* Fin de Prueba*/
 }
 .supra {
   background-color: #34496693;
