@@ -62,7 +62,7 @@ compro.forEach((x) => {
         let contaCursos = sessionStorage.getItem("acc" + i);
 
         if (contaCursos != null && contaCursos != false) {
-          accCursos[i] = sessionStorage.getItem("acc" + i);
+          accCursos[i] = true;
         }
         if (contaPrecio[i] != null && contaPrecio[i] != "") {
           accPrecio[i] = sessionStorage.getItem("pre" + i);
@@ -146,9 +146,8 @@ productosCart.addEventListener("click",(toctoc)=>{
       console.log("hace el ciclo?")
       if(itemAEliminar.value == t){
         console.log("valor es: "+t);
-        sessionStorage.setItem("acc"+t, null);
+        sessionStorage.setItem("acc"+t, false);
         delItem.remove();
-        t=6;
       }
       t++;
     }
@@ -163,7 +162,8 @@ function agregarItem() {
   while (j < mCursos) {
     yaMeCanse=sessionStorage.getItem("acc" + j);
     console.log("valor de:"+j+" - "+sessionStorage.getItem("acc" + j));
-    if (yaMeCanse==true) {
+    console.log(yaMeCanse.value);
+    if (yaMeCanse.sessionStorage.setItem("acc"+t, false)) {
       console.log(sessionStorage.getItem("acc" + j))
       console.log("ocultar h3");
       sinArt.classList.add("d-hidde");
