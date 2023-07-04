@@ -59,11 +59,10 @@ compro.forEach((x) => {
 
 
         // INICIO COSITAS RARAS ------------------------
-        let contaCursos = sessionStorage.getItem("acc" + i);
+        //sessionStorage.setItem("acc"+i,false);
+        //let contaCursos = sessionStorage.getItem("acc" + i);
 
-        if (contaCursos != null && contaCursos != false) {
-          accCursos[i] = true;
-        }
+
         if (contaPrecio[i] != null && contaPrecio[i] != "") {
           accPrecio[i] = sessionStorage.getItem("pre" + i);
         }
@@ -74,7 +73,10 @@ compro.forEach((x) => {
         console.log(sessionStorage.getItem("pre" + i));
         console.log(allCursos[i]);
         //CREO EL SESSIONSTORAGE PARA CADA CURSO RESPECTO DE LA SELECCION
-        sessionStorage.setItem("acc" + i, accCursos[i]);
+        if (sessionStorage.getItem("acc" + i) !== null && sessionStorage.getItem("acc" + i) != "false") {
+          accCursos[i] = true;
+          sessionStorage.setItem("acc" + i, accCursos[i]);
+        }
         console.log(sessionStorage.getItem("acc" + i));/*FUNCIONA ESTO entonces...*/
 
         const itemAniadido = document.createElement("div");
@@ -83,9 +85,8 @@ compro.forEach((x) => {
 
         //PREGUNTO SI YA EXISTE UN DIV CON LA INFO
         console.log(accCursos[i]);// se puede borrar
-        console.log(sessionStorage.getItem("acc" + i)); //se pouede borrar 
-        console.log(contaCursos); //se puede borrar
-        if (contaCursos==true) {
+        console.log(sessionStorage.getItem("acc" + i)); //se pouede borrar //se puede borrar
+        if (sessionStorage.getItem("acc" + i)=="true") {
           console.log("Se permite solo un curso de c/u");
         } else {
           console.log("ingreso al creador");//se puede borrar 
@@ -101,7 +102,7 @@ compro.forEach((x) => {
           <button value="${i}" name="d" class="eliminar-item-cart">X</button>`;
 
           productosCart.append(itemAniadido); //añado el div item al div del carrito
-        
+
         }
 
 
@@ -132,24 +133,27 @@ cerrarCart.addEventListener("click", () => {
   contenedorCart.classList.add("d-hidde");
 });
 
-productosCart.addEventListener("click",(toctoc)=>{
+productosCart.addEventListener("click", (toctoc) => {
   //DEVUELVE VALOR TRUE SI SELECCIONO EL BOTON CORRECTO
   console.log(toctoc.target.classList.contains("eliminar-item-cart"));
-  if(toctoc.target.classList.contains("eliminar-item-cart")){
+  if (toctoc.target.classList.contains("eliminar-item-cart")) {
     console.log(toctoc.target.parentElement);
     console.log("elemento seleccionado");
-    const delItem =toctoc.target.parentElement;
-    let t=0;
-    let itemAEliminar=delItem.querySelector("button");
+    const delItem = toctoc.target.parentElement;
+    let t = 0;
+    let itemAEliminar = delItem.querySelector("button");
     console.log(itemAEliminar.value);
-    while(t<mCursos){
+    while (t < mCursos) {
       console.log("hace el ciclo?")
-      if(itemAEliminar.value == t){
-        console.log("valor es: "+t);
-        sessionStorage.setItem("acc"+t, false);
+      if (itemAEliminar.value == t) {
+        console.log("valor eliminado es: " + t);
+        sessionStorage.setItem("acc" + t, false);
+        console.log(sessionStorage.getItem("acc" + t));
         delItem.remove();
       }
+      console.log(sessionStorage.getItem("acc" + t));
       t++;
+      
     }
   }
 });
@@ -160,23 +164,25 @@ agregarItem();
 function agregarItem() {
   let j = 0;
   while (j < mCursos) {
-    yaMeCanse=sessionStorage.getItem("acc" + j);
-    console.log("valor de:"+j+" - "+sessionStorage.getItem("acc" + j));
-    console.log(yaMeCanse.value);
-    if (yaMeCanse.sessionStorage.setItem("acc"+t, false)) {
-      console.log(sessionStorage.getItem("acc" + j))
-      console.log("ocultar h3");
-      sinArt.classList.add("d-hidde");
-      const itemAniadido = document.createElement("div");
-      itemAniadido.classList.add("item-cart");
-      itemAniadido.innerHTML = `
-    <h3>${allCursos[j]}</h3>
-    <p>${sessionStorage.getItem("pre" + j)}</p>
-    <button value="${j}" name="d" class="eliminar-item-cart">X</button>`;
-
-      productosCart.append(itemAniadido);
-    }else{
-      //sinArt.classList.remove("d-hidde");
+    let yaMeCanse = sessionStorage.getItem("acc" + j);
+    console.log("valor de:" + j + " - " + sessionStorage.getItem("acc" + j));
+    console.log(yaMeCanse);
+    console.log(sessionStorage.getItem("acc" + j));
+    if(yaMeCanse !==null){
+      if (yaMeCanse!="false") {
+        console.log(sessionStorage.getItem("acc" + j))
+        console.log("ocultar h3");
+        sinArt.classList.add("d-hidde");
+        const itemAniadido = document.createElement("div");
+        itemAniadido.classList.add("item-cart");
+        itemAniadido.innerHTML = `
+      <h3>${allCursos[j]}</h3>
+      <p>${sessionStorage.getItem("pre" + j)}</p>
+      <button value="${j}" name="d" class="eliminar-item-cart">X</button>`;
+  
+        productosCart.append(itemAniadido);
+      }
+      
     }
     j++;
   }
