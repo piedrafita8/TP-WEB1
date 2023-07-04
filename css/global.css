@@ -217,6 +217,7 @@ main {
 
 /*Para el mensaje de alerta*/
 .d-hidde {
+  transition: 0.7s;
   opacity: 0;
   pointer-events: none;
   position:fixed;
@@ -278,6 +279,84 @@ main {
   color: var(--color-secundario);
 }
 /*Fin mensaje de alerta*/
+
+
+/* CARRITO DISEÑO DESPLEGADO */
+.content-cart{
+  background-color: white;
+  border-radius: 0.2em;
+  padding: 0.8em;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  z-index: 3;
+  transition: 0.8s;
+  opacity:1;
+}
+#sin-art{
+  text-align: center;
+  width: 90%;
+  margin: auto;
+}
+.productos-cart{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.item-cart{
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  width:100%;
+  margin: auto;
+}
+.item-cart *{
+  margin: 0.3em;
+}
+.cant-item-cart{
+  padding: 0.5em;
+  margin:0.5em;
+  border-radius: 50%;
+  background-color: #b3b3b3;
+}
+.regulador button{
+  padding: 0.1em 0em 0em 0em;
+  margin: 0;
+  width: 1.5em;
+  border: 0.1em solid black;
+  background-color: #b3b3b3;
+}
+.menos{
+  border-radius: 0.2em 0em 0em 0.2em;
+}
+.mas{
+  border-radius: 0 0.2em 0.2em 0;
+}
+.eliminar-item-cart{
+  font-weight: 600;
+  background-color: red;
+  border-radius: 0.1em;
+  width: 2em;
+  padding: 0.4em;
+  border: 0.1em solid black;
+
+}
+.btn-cart button{
+  margin: auto;
+  padding: 0.2em;
+  border-radius: 0.1em;
+  background-color: var(--beige);
+  border: 0.1em solid #50004c
+}
+
+/* FIN CARRITO DESPLEGADO */
 
 @media only screen and (max-width: 50em) {
   .header-contenido {

@@ -1,245 +1,281 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/i-curso.css" />
-    <title>Nuestros Cursos</title>
-  </head>
-  <body>
-    <!--Mensjae de alerta-->
-    <div class="d-hidde" id="warning">
-      <div class="alerta">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          height="1em"
-          viewBox="0 0 640 512"
-        >
-          <path
-            d="M407 47c9.4-9.4 24.6-9.4 33.9 0l17.2 17.2c1.9-.1 3.9-.2 5.8-.2h32c11.2 0 21.9 2.3 31.6 6.5L543 55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L564 101.9c7.6 12.2 12 26.7 12 42.1c0 10.2 7.4 18.8 16.7 23c27.9 12.5 47.3 40.5 47.3 73c0 26.2-12.6 49.4-32 64v32c0 8.8-7.2 16-16 16H560c-8.8 0-16-7.2-16-16V320H480v16c0 8.8-7.2 16-16 16H432c-8.8 0-16-7.2-16-16V318.4c-11.8-2.4-22.7-7.4-32-14.4c-1.5-1.1-2.9-2.3-4.3-3.5c-17-14.7-27.7-36.4-27.7-60.5c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 44.7 26.2 83.2 64 101.2V352c0 17.7 14.3 32 32 32h32v64c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V372c-19.8 7.7-41.4 12-64 12s-44.2-4.3-64-12v76c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V329.1L45.9 369.7c-5.4 12.1-19.6 17.6-31.7 12.2S-3.3 362.4 2.1 350.3L24 300.9c5.3-11.9 8-24.7 8-37.7C32 155.7 117.2 68 223.8 64.1l.2-.1h7.2H256h32c41.7 0 83.4 12.1 117.2 25.7c1.7-1.8 3.5-3.6 5.3-5.2L407 81c-9.4-9.4-9.4-24.6 0-33.9zm73 185a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm88 24a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM480 144a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"
-          />
-        </svg>
-        <h3>¿Desea ir a comprar el curso ahora?</h3>
-        <p>o puede continuar navegando por mas articulos!</p>
-        <div class="btn-alert">
-          <a href="#" id="noIrA">Continuar Navegando</a>
-          <a href="inscripcion.html" id="irA">Ir a comprar</a>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/i-curso.css" />
+  <title>Nuestros Cursos</title>
+</head>
+
+<body>
+  <!--Mensjae de alerta-->
+  <div class="d-hidde" id="warning">
+    <div class="alerta">
+      <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 640 512">
+        <path
+          d="M407 47c9.4-9.4 24.6-9.4 33.9 0l17.2 17.2c1.9-.1 3.9-.2 5.8-.2h32c11.2 0 21.9 2.3 31.6 6.5L543 55c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9L564 101.9c7.6 12.2 12 26.7 12 42.1c0 10.2 7.4 18.8 16.7 23c27.9 12.5 47.3 40.5 47.3 73c0 26.2-12.6 49.4-32 64v32c0 8.8-7.2 16-16 16H560c-8.8 0-16-7.2-16-16V320H480v16c0 8.8-7.2 16-16 16H432c-8.8 0-16-7.2-16-16V318.4c-11.8-2.4-22.7-7.4-32-14.4c-1.5-1.1-2.9-2.3-4.3-3.5c-17-14.7-27.7-36.4-27.7-60.5c0-8.8-7.2-16-16-16s-16 7.2-16 16c0 44.7 26.2 83.2 64 101.2V352c0 17.7 14.3 32 32 32h32v64c0 17.7-14.3 32-32 32H352c-17.7 0-32-14.3-32-32V372c-19.8 7.7-41.4 12-64 12s-44.2-4.3-64-12v76c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V329.1L45.9 369.7c-5.4 12.1-19.6 17.6-31.7 12.2S-3.3 362.4 2.1 350.3L24 300.9c5.3-11.9 8-24.7 8-37.7C32 155.7 117.2 68 223.8 64.1l.2-.1h7.2H256h32c41.7 0 83.4 12.1 117.2 25.7c1.7-1.8 3.5-3.6 5.3-5.2L407 81c-9.4-9.4-9.4-24.6 0-33.9zm73 185a24 24 0 1 0 -48 0 24 24 0 1 0 48 0zm88 24a24 24 0 1 0 0-48 24 24 0 1 0 0 48zM480 144a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z" />
+      </svg>
+      <h3>¿Desea ir a comprar el curso ahora?</h3>
+      <p>o puede continuar navegando por mas articulos!</p>
+      <div class="btn-alert">
+        <a href="#" id="noIrA">Continuar Navegando</a>
+        <a href="inscripcion.html" id="irA">Ir a comprar</a>
       </div>
     </div>
-    <!--Fin mensaje de alerta-->
-    <header class="header">
-      <div class="header-contenido">
-        <a href="index.html" class="logo-name">
-          <img class="logo" alt="logo" src="img/logo.png" />
-          <h2>OnlineTechEd</h2>
-        </a>
-        <form action="#" method="post" class="formulario">
-          <datalist id="opciones">
-            <option value="Inicio"></option>
-            <option value="Detalle de curso"></option>
-            <option value="Inscripcion"></option>
-            <option value="Giftcard"></option>
-            <option value="Contacto"></option>
-          </datalist>
+  </div>
+  <!--Fin mensaje de alerta-->
+  <header class="header">
+    <div class="header-contenido">
+      <a href="index.html" class="logo-name">
+        <img class="logo" alt="logo" src="img/logo.png" />
+        <h2>OnlineTechEd</h2>
+      </a>
+      <form action="#" method="post" class="formulario">
+        <datalist id="opciones">
+          <option value="Inicio"></option>
+          <option value="Detalle de curso"></option>
+          <option value="Inscripcion"></option>
+          <option value="Giftcard"></option>
+          <option value="Contacto"></option>
+        </datalist>
 
-          <input type="text" name="search" list="opciones" class="input" />
+        <input type="text" name="search" list="opciones" class="input" />
 
-          <button type="submit" class="btn-search">
-            <img class="img-search" alt="search" src="img/icons/search.png" />
-          </button>
-        </form>
+        <button type="submit" class="btn-search">
+          <img class="img-search" alt="search" src="img/icons/search.png" />
+        </button>
+      </form>
 
-        <div class="carrito">
-          <img class="icon" src="img/icons/cart.png" />
-          <p class="cantidad" id="cant-carrito">0</p>
+      <div id="h-cart" class="carrito">
+        <img class="icon" src="img/icons/cart.png" />
+        <p class="cantidad" id="cant-carrito">0</p>
+      </div>
+      <!-- CARRITO DESPLIEGUE -->
+      <div id="contenedor-cart" class=" d-hidde">
+        <h3 id="sin-art" class="">No tienes añadidos articulos aun !</h3>
+        <div class="productos-cart">
+          <!--<div class="item-cart">
+            <p class="cant-item-cart">0</p>
+            <h3>Titulo</h3>
+            <p>Precio</p>
+            <button class="eliminar-item-cart">X</button>
+          </div>
+            -->
+        </div>
+        <div class="btn-cart">
+          <p>Total</p>
+          <button id="btn-cart-cerrar">Cerrar</button>
+          <button id="btn-cart-inscribirse"><a href="inscripcion.html">Inscribirse</a></button>
         </div>
       </div>
-      <div>
-        <nav>
-          <input type="checkbox" id="check" />
-          <label for="check" class="checkbtn">
-            <img src="img/icons/nav.png" />
-          </label>
-          <ul>
-            <li class="item">
-              <a href="index.html">Home</a>
-            </li>
-            <li class="item">
-              <a href="calendario.html">Calendario</a>
-            </li>
-            <li class="item">
-              <a href="i-curso.html">Cursos</a>
-            </li>
-            <li class="item">
-              <a href="inscripcion.html">Inscripcion</a>
-            </li>
-            <li class="item">
-              <a href="giftcard.html">Giftcard</a>
-            </li>
-            <li class="item">
-              <a href="contacto.html">Contacto</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="contenedor">
-      <section>
-        <section class="cursos">
-          <h2>NUESTROS CURSOS</h2>
-          <article class="cursos-grid">
-            <article class="curso">
-              <div class="curso-img">
-                <img src="img/home/python.jpg" />
-                <span>$6.000</span>
+
+    </div>
+    <!-- CARRITO DESPLIEGUE -->
+
+    </div>
+    <div>
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <img src="img/icons/nav.png" />
+        </label>
+        <ul>
+          <li class="item">
+            <a href="index.html">Home</a>
+          </li>
+          <li class="item">
+            <a href="calendario.html">Calendario</a>
+          </li>
+          <li class="item">
+            <a href="i-curso.html">Cursos</a>
+          </li>
+          <li class="item">
+            <a href="inscripcion.html">Inscripcion</a>
+          </li>
+          <li class="item">
+            <a href="giftcard.html">Giftcard</a>
+          </li>
+          <li class="item">
+            <a href="contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="contenedor">
+    <section>
+      <section class="cursos">
+        <h2>NUESTROS CURSOS</h2>
+        <article class="cursos-grid">
+          <article class="curso">
+            <div class="curso-img">
+              <img src="img/home/python.jpg" />
+              <span class="i-precio">$6.500</span>
+            </div>
+            <div class="curso-info">
+              <p>60hs</p>
+              <div class="curso-right">
+                <h3>Python</h3>
+                <button class="curso-btn det">
+                  <a href="d-cursos/curso-python.html">
+                    <p>Ver Detalle</p>
+                  </a>
+                </button>
+                <button class="curso-btn incs">
+                  <a href="#" name="compro">
+                    <p class="selComp">Comprar</p>
+                  </a>
+                </button>
               </div>
-              <div class="curso-info">
-                <p>60hs</p>
-                <div class="curso-right">
-                  <h3>Python</h3>
-                  <button class="curso-btn det">
-                    <a href="d-cursos/curso-python.html"><p>Ver Detalle</p></a>
-                  </button>
-                  <button class="curso-btn incs">
-                    <a href="#" name="compro"><p>Comprar</p></a>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="curso">
-              <div class="curso-img">
-                <img src="img/home/ps.jpg" />
-                <span>$6.000</span>
-              </div>
-              <div class="curso-info">
-                <p>60hs</p>
-                <div class="curso-right">
-                  <h3>Photoshop</h3>
-                  <button class="curso-btn det">
-                    <a href="d-cursos/curso-photoshop.html"
-                      ><p>Ver Detalle</p></a
-                    >
-                  </button>
-                  <button class="curso-btn incs">
-                    <a href="#" name="compro"><p>Comprar</p></a>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="curso">
-              <div class="curso-img">
-                <img src="img/home/ecommerce.jpg" />
-                <span>$6.000</span>
-              </div>
-              <div class="curso-info">
-                <p>60hs</p>
-                <div class="curso-right">
-                  <h3>E-commerce</h3>
-                  <button class="curso-btn det">
-                    <a href="d-cursos/curso-ecommerce.html"
-                      ><p>Ver Detalle</p></a
-                    >
-                  </button>
-                  <button class="curso-btn incs">
-                    <a href="#" name="compro"><p>Comprar</p></a>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="curso">
-              <div class="curso-img">
-                <img src="img/home/videojuegos.jpg" />
-                <span>$6.000</span>
-              </div>
-              <div class="curso-info">
-                <p>60hs</p>
-                <div class="curso-right">
-                  <h3>Desarrollo de Videojuegos</h3>
-                  <button class="curso-btn det">
-                    <a href="d-cursos/curso-des-juegos.html"
-                      ><p>Ver Detalle</p></a
-                    >
-                  </button>
-                  <button class="curso-btn incs">
-                    <a href="#" name="compro"><p>Comprar</p></a>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="curso">
-              <div class="curso-img">
-                <img src="img/home/ph.jpg" />
-                <span>$6.000</span>
-              </div>
-              <div class="curso-info">
-                <p>60hs</p>
-                <div class="curso-right">
-                  <h3>Fotografía</h3>
-                  <button class="curso-btn det">
-                    <a href="d-cursos/curso-fotografia.html"
-                      ><p>Ver Detalle</p></a
-                    >
-                  </button>
-                  <button class="curso-btn incs">
-                    <a href="#" name="compro"><p>Comprar</p></a>
-                  </button>
-                </div>
-              </div>
-            </article>
-            <article class="curso">
-              <div class="curso-img">
-                <img src="img/home/css.jpg" />
-                <span>$6.000</span>
-              </div>
-              <div class="curso-info">
-                <p>60hs</p>
-                <div class="curso-right">
-                  <h3>CSS</h3>
-                  <button class="curso-btn det">
-                    <a href="d-cursos/curso-css.html"><p>Ver Detalle</p></a>
-                  </button>
-                  <button class="curso-btn incs">
-                    <a href="#" name="compro"><p>Comprar</p></a>
-                  </button>
-                </div>
-              </div>
-            </article>
+            </div>
           </article>
-        </section>
+          <article class="curso">
+            <div class="curso-img">
+              <img src="img/home/ps.jpg" />
+              <span class="i-precio">$5.000</span>
+            </div>
+            <div class="curso-info">
+              <p>60hs</p>
+              <div class="curso-right">
+                <h3>Photoshop</h3>
+                <button class="curso-btn det">
+                  <a href="d-cursos/curso-photoshop.html">
+                    <p>Ver Detalle</p>
+                  </a>
+                </button>
+                <button class="curso-btn incs">
+                  <a href="#" name="compro">
+                    <p class="selComp">Comprar</p>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="curso">
+            <div class="curso-img">
+              <img src="img/home/ecommerce.jpg" />
+              <span>$6.000</span>
+            </div>
+            <div class="curso-info">
+              <p>60hs</p>
+              <div class="curso-right">
+                <h3>E-commerce</h3>
+                <button class="curso-btn det">
+                  <a href="d-cursos/curso-ecommerce.html">
+                    <p>Ver Detalle</p>
+                  </a>
+                </button>
+                <button class="curso-btn incs">
+                  <a href="#" name="compro">
+                    <p>Comprar</p>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="curso">
+            <div class="curso-img">
+              <img src="img/home/videojuegos.jpg" />
+              <span>$6.000</span>
+            </div>
+            <div class="curso-info">
+              <p>60hs</p>
+              <div class="curso-right">
+                <h3>Desarrollo de Videojuegos</h3>
+                <button class="curso-btn det">
+                  <a href="d-cursos/curso-des-juegos.html">
+                    <p>Ver Detalle</p>
+                  </a>
+                </button>
+                <button class="curso-btn incs">
+                  <a href="#" name="compro">
+                    <p>Comprar</p>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="curso">
+            <div class="curso-img">
+              <img src="img/home/ph.jpg" />
+              <span>$6.000</span>
+            </div>
+            <div class="curso-info">
+              <p>60hs</p>
+              <div class="curso-right">
+                <h3>Fotografía</h3>
+                <button class="curso-btn det">
+                  <a href="d-cursos/curso-fotografia.html">
+                    <p>Ver Detalle</p>
+                  </a>
+                </button>
+                <button class="curso-btn incs">
+                  <a href="#" name="compro">
+                    <p>Comprar</p>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </article>
+          <article class="curso">
+            <div class="curso-img">
+              <img src="img/home/css.jpg" />
+              <span>$6.000</span>
+            </div>
+            <div class="curso-info">
+              <p>60hs</p>
+              <div class="curso-right">
+                <h3>CSS</h3>
+                <button class="curso-btn det">
+                  <a href="d-cursos/curso-css.html">
+                    <p>Ver Detalle</p>
+                  </a>
+                </button>
+                <button class="curso-btn incs">
+                  <a href="#" name="compro">
+                    <p>Comprar</p>
+                  </a>
+                </button>
+              </div>
+            </div>
+          </article>
+        </article>
       </section>
-    </main>
-    <footer class="footer">
-      <div class="datos-personales">
-        <p>Santiago Piedrafita</p>
-        <p>Jorge Villalba</p>
-        <p>Agustin Pucci</p>
-      </div>
-      <div class="menu-inferior">
-        <a href="index.html">Home</a>
-        <a href="calendario.html">Calendario</a>
-        <a href="contacto.html">Contacto</a>
-        <a href="i-curso.html">Cursos</a>
-        <a href="giftcard.html">Giftcard</a>
-        <a href="inscripcion.html">Inscripcion</a>
-      </div>
-      <div class="redes-sociales">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img class="icon" src="img/icons/fb.png" />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img class="icon" src="img/icons/ig.png" />
-        </a>
-        <a href="https://www.twitter.com/" target="_blank">
-          <img class="icon" src="img/icons/tw.png" />
-        </a>
-        <a href="https://www.youtube.com/" target="_blank">
-          <img class="icon" src="img/icons/yt.png" />
-        </a>
-      </div>
-    </footer>
-    <script src="js/i-curso.js"></script>
-    <script src="js/global.js"></script>
-  </body>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="datos-personales">
+      <p>Santiago Piedrafita</p>
+      <p>Jorge Villalba</p>
+      <p>Agustin Pucci</p>
+    </div>
+    <div class="menu-inferior">
+      <a href="index.html">Home</a>
+      <a href="calendario.html">Calendario</a>
+      <a href="contacto.html">Contacto</a>
+      <a href="i-curso.html">Cursos</a>
+      <a href="giftcard.html">Giftcard</a>
+      <a href="inscripcion.html">Inscripcion</a>
+    </div>
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/" target="_blank">
+        <img class="icon" src="img/icons/fb.png" />
+      </a>
+      <a href="https://www.instagram.com/" target="_blank">
+        <img class="icon" src="img/icons/ig.png" />
+      </a>
+      <a href="https://www.twitter.com/" target="_blank">
+        <img class="icon" src="img/icons/tw.png" />
+      </a>
+      <a href="https://www.youtube.com/" target="_blank">
+        <img class="icon" src="img/icons/yt.png" />
+      </a>
+    </div>
+  </footer>
+  <script src="js/i-curso.js"></script>
+  <script src="js/global.js"></script>
+</body>
+
 </html>
