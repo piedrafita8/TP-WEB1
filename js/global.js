@@ -85,7 +85,7 @@ compro.forEach((x) => {
         console.log(accCursos[i]);// se puede borrar
         console.log(sessionStorage.getItem("acc" + i)); //se pouede borrar 
         console.log(contaCursos); //se puede borrar
-        if (contaCursos) {
+        if (contaCursos==true) {
           console.log("Se permite solo un curso de c/u");
         } else {
           console.log("ingreso al creador");//se puede borrar 
@@ -98,10 +98,6 @@ compro.forEach((x) => {
           itemAniadido.innerHTML = `
           <h3>${allCursos[i]}</h3>
           <p>${sessionStorage.getItem("pre" + i)}</p>
-          <!--<div class="regulador">
-            <button name="menos" class="menos" disabled value="0">-</button>
-            <button name="mas" class="mas" disabled vlaue="1">+</button>
-          </div>-->
           <button value="${i}" name="d" class="eliminar-item-cart">X</button>`;
 
           productosCart.append(itemAniadido); //añado el div item al div del carrito
@@ -150,7 +146,8 @@ productosCart.addEventListener("click",(toctoc)=>{
       console.log("hace el ciclo?")
       if(itemAEliminar.value == t){
         console.log("valor es: "+t);
-        sessionStorage.setItem("acc"+t, false);
+        sessionStorage.setItem("acc"+t, null);
+        delItem.remove();
         t=6;
       }
       t++;
@@ -164,7 +161,9 @@ agregarItem();
 function agregarItem() {
   let j = 0;
   while (j < mCursos) {
-    if (sessionStorage.getItem("acc" + j)) {
+    yaMeCanse=sessionStorage.getItem("acc" + j);
+    console.log("valor de:"+j+" - "+sessionStorage.getItem("acc" + j));
+    if (yaMeCanse==true) {
       console.log(sessionStorage.getItem("acc" + j))
       console.log("ocultar h3");
       sinArt.classList.add("d-hidde");
@@ -176,6 +175,8 @@ function agregarItem() {
     <button value="${j}" name="d" class="eliminar-item-cart">X</button>`;
 
       productosCart.append(itemAniadido);
+    }else{
+      //sinArt.classList.remove("d-hidde");
     }
     j++;
   }
