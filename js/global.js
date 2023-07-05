@@ -53,9 +53,10 @@ compro.forEach((x) => {
     sessionStorage.setItem("acc", conta);
     while (i < mCursos) {
       if (compro[i] == x) {
-        conta++;
+        /*conta++;
         sessionStorage.setItem("acc", conta);
         cantCarrito.innerHTML = sessionStorage.getItem("acc");
+        */
         war.classList.add("supra");
         war.classList.remove("d-hidde");
         //FINALIZO EL ACC DEL CARRITO SOLO
@@ -96,6 +97,11 @@ compro.forEach((x) => {
         if (sessionStorage.getItem("acc" + i) == "true") {
           console.log("Se permite solo un curso de c/u");
         } else {
+          //pruebo contador
+        conta++;
+        sessionStorage.setItem("acc", conta);
+        cantCarrito.innerHTML = sessionStorage.getItem("acc");
+          // fin prueba
           console.log("ingreso al creador");//se puede borrar 
           console.log(accCursos[i]); //se puede borrar
           accCursos[i] = true;
@@ -153,6 +159,8 @@ cerrarCart.addEventListener("click", () => {
   contenedorCart.classList.add("d-hidde");
 });
 
+
+
 productosCart.addEventListener("click", (toctoc) => {
   //DEVUELVE VALOR TRUE SI SELECCIONO EL BOTON CORRECTO
   console.log(toctoc.target.classList.contains("eliminar-item-cart"));
@@ -170,17 +178,26 @@ productosCart.addEventListener("click", (toctoc) => {
         console.log(sessionStorage.getItem("acc" + t));
 
         delItem.remove();
-        //preciooooooooooooo
+        //preciooooooooooooo teeee odiooooo
         var auxElim = parseFloat(sessionStorage.getItem("precio"));
         precioTotal = parseFloat((sessionStorage.getItem("pre" + t)).slice(1));
-        console.log(precioTotal);
-        console.log("elim = " + auxElim + " preTotal: " + precioTotal);
+        console.log(precioTotal); //eliminar
+        console.log("elim = " + auxElim + " preTotal: " + precioTotal); //eliminar
         auxElim = auxElim - precioTotal;
         sessionStorage.setItem("precio", auxElim);
         sessionStorage.setItem("pre" + t, 0);
-        console.log("total final final :"+ (auxElim*1000))
-        console.log("valor del precio: " + sessionStorage.getItem("pre" + t));
+        console.log("total final final :"+ (auxElim*1000)) //eliminar
+        console.log("valor del precio: " + sessionStorage.getItem("pre" + t));//eliminar
         costoTotal.innerHTML="Total = $"+(parseFloat(sessionStorage.getItem("precio")) * 1000);
+
+        //CONTADOR DEL CARRITO RESTAR
+        var auxCont = parseInt(sessionStorage.getItem("acc"));
+        auxCont = auxCont - 1;
+        sessionStorage.setItem("acc",auxCont);
+        cantCarrito.innerHTML = sessionStorage.getItem("acc");
+        console.log(auxCont);
+        //FIN RESTA
+
       }
       console.log(sessionStorage.getItem("acc" + t));
       t++;
