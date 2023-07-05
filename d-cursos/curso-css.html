@@ -59,10 +59,29 @@
           </button>
         </form>
 
-        <div class="carrito">
+        <div id="h-cart" class="carrito">
           <img class="icon" src="../img/icons/cart.png" />
           <p class="cantidad" id="cant-carrito">0</p>
         </div>
+        <!-- CARRITO DESPLIEGUE -->
+        <div id="contenedor-cart" class=" d-hidde">
+          <h3 id="sin-art" class="">No tienes añadidos articulos aun !</h3>
+          <div class="productos-cart">
+            <!--<div class="item-cart">
+              <p class="cant-item-cart">0</p>
+              <h3>Titulo</h3>
+              <p>Precio</p>
+              <button value="${j}" name="d" class="eliminar-item-cart">X</button>
+            </div>
+              -->
+          </div>
+          <div class="btn-cart">
+            <p id="inscripcionMonto">Total = 0</p>
+            <button id="btn-cart-cerrar">Cerrar</button>
+            <button id="btn-cart-inscribirse"><a href="../inscripcion.html">Inscribirse</a></button>
+          </div>
+        </div>
+        <!-- CARRITO DESPLIEGUE -->
       </div>
       <div>
         <nav>
@@ -102,7 +121,7 @@
               <div class="cursojpg">
                 <img src="../img/curso/otro1.jpg" alt="CSS not fund image" />
               </div>
-              <span class="precio-curso">$6.000</span>
+              <span class="precio-curso i-precio">$6.000</span>
             </div>
             <div class="cursodesc">
               <p>Tiempo de dedicacion necesario: 6hs diarias durante 4 semanas</p>

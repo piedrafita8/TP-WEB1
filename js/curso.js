@@ -52,3 +52,29 @@ uni2.addEventListener("click", function () {
   uni11.classList.add("d-none");
   uni00.classList.add("d-none");
 });
+
+
+
+
+
+//VEAMOS QUE SE PUEDE HACER
+const allCursosC = {
+  0: "Python",
+  1: "Photoshop",
+  2: "E-commerce",
+  3: "Desarrollo De Videojuegos",
+  4: "Fotografía",
+  5: "CSS",
+};
+let compr=document.getElementsByName("compr");
+compr.forEach((t)=>{
+  t.addEventListener("click",()=>{
+    console.log("value: "+(parseInt(t.value)));
+    let i = 0;
+    while(i<6){
+      if(t.value==allCursosC[i])
+      console.log("existe el valor:"+t);
+      i++
+    };
+  });
+});
