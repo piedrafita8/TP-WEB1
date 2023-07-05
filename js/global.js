@@ -17,7 +17,7 @@ let hCart = document.querySelector("#h-cart");
 let contenedorCart = document.querySelector("#contenedor-cart");
 let cerrarCart = document.querySelector("#btn-cart-cerrar");
 let contenedorCurso = document.querySelector(".curso");
-let costoTotal = document.getElementById("total");
+let costoTotal = document.getElementById("inscripcionMonto");
 var precioTotal;
 precioTotal = parseFloat(sessionStorage.getItem("precio"));
 console.log("valor inicial de precio total: " + precioTotal);

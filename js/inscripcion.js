@@ -40,11 +40,18 @@ window.onclick = function (event) {
 
 //Crear primera fila.
 agregarFila();
-
+//ver
 function calcularMonto() {
   let personas = document.getElementsByClassName(constantes.classPersona);
+  //meto modificacion de aca
+  if(!isNaN(valorActual)){
+    console.log("no es NaN en inscripcion: "+valorActual);
+    monto.innerHTML = "$ " + (valorActual*personas.length*1000);
+  }else{
+  //hasta aca sin tocar codigo anteriormente
   let newMonto = constantes.monto * personas.length;
   monto.innerHTML = "$ " + newMonto.toLocaleString();
+  }
 }
 
 function agregarFila() {
@@ -222,3 +229,31 @@ formInsc.addEventListener("submit", (evento) => {
 
   mensaje.style.display = "block";
 });
+///PARA EL PLACEHOLDER ------
+const allCursosP = {
+  0: "Python",
+  1: "Photoshop",
+  2: "E-commerce",
+  3: "Desarrollo De Videojuegos",
+  4: "Fotografía",
+  5: "CSS",
+};
+
+let placeCurso=document.getElementById("place-curso");
+let texto="Inscripcion a Curso: ";
+let m=6;
+let i = 0;
+while(i<m){
+  let tempAux=sessionStorage.getItem("acc"+i);
+  console.log("valor temp: "+i+" "+tempAux);
+  console.log(sessionStorage.getItem("acc"+i));
+  var valorActual = sessionStorage.getItem("precio");
+  console.log("precio"+valorActual);
+  if(tempAux == "true"){
+    texto= texto + allCursosP[i]+", "
+    placeCurso.innerHTML=texto;
+  }
+  i++;
+};
+
+//PARA EL MONTO TOTAL
